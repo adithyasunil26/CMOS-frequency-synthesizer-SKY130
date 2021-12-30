@@ -1,0 +1,114 @@
+timestamp 1640777101
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use tspc_r tspc_r_0 1 0 290 0 1 760
+use tspc_r tspc_r_1 1 0 290 0 -1 -850
+use and_pd and_pd_0 1 0 2200 0 1 790
+node "GND" 1 835.41 20 -130 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 343400 4380 0 0 0 0
+node "DIV" 1 109.532 -230 -910 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6900 520 0 0 0 0 0 0 0 0
+node "REF" 1 109.532 -230 790 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6900 520 0 0 0 0 0 0 0 0
+node "UP" 2 244.23 2400 670 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16200 1140 0 0 0 0 0 0 0 0 0 0
+node "m1_2010_600#" 1 81.02 2010 600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4800 380 0 0 0 0 0 0 0 0 0 0
+node "R" 26 1552.78 2870 560 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 6400 320 114700 7100 0 0 0 0 0 0 0 0
+node "DOWN" 22 1071.98 2160 560 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 73300 4780 0 0 0 0 0 0 0 0 0 0
+node "VDD" 76 1878.87 60 -770 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3200 320 12800 640 16400 720 20000 800 213800 7140 0 0 0 0
+node "VDD" 22177 1894.2 0 1160 nw 0 0 0 0 631400 6180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "R" "GND" 53.75
+cap "DOWN" "GND" 50.15
+cap "VDD" "GND" 113.9
+cap "m1_2010_600#" "UP" 4.5
+cap "VDD" "DIV" 27.9
+cap "R" "UP" 72
+cap "VDD" "REF" 27.9
+cap "DOWN" "UP" 101.25
+cap "DOWN" "m1_2010_600#" 41.625
+cap "DOWN" "R" 185.417
+cap "VDD" "VDD" 0.48
+cap "tspc_r_0/z5" "tspc_r_1/z5" 4.86486
+cap "tspc_r_0/GND" "tspc_r_1/VDD" 53.6
+cap "tspc_r_1/VDD" "tspc_r_1/clk" 62.5
+cap "tspc_r_0/Z4" "tspc_r_1/Z4" 9.72973
+cap "tspc_r_0/GND" "tspc_r_0/Z4" 6.66667
+cap "tspc_r_1/VDD" "tspc_r_1/Z2" 72
+cap "tspc_r_1/R" "tspc_r_1/Z3" 148.04
+cap "tspc_r_0/GND" "tspc_r_1/Z4" 6.66667
+cap "tspc_r_0/GND" "tspc_r_1/R" 80.745
+cap "tspc_r_1/VDD" "tspc_r_1/Z3" 10.9091
+cap "tspc_r_1/VDD" "tspc_r_1/R" 100
+cap "tspc_r_0/GND" "tspc_r_1/Q" 38.8765
+cap "tspc_r_0/GND" "tspc_r_1/z5" 6.66667
+cap "tspc_r_0/GND" "tspc_r_1/R" 9.25926
+cap "tspc_r_0/z5" "tspc_r_1/z5" 4.86486
+cap "tspc_r_0/GND" "tspc_r_0/z5" 6.66667
+cap "tspc_r_0/w_n290_n40#" "tspc_r_0/VDD" 41.43
+cap "tspc_r_0/z5" "tspc_r_1/z5" 4.86486
+cap "tspc_r_0/GND" "tspc_r_1/Z4" 6.66667
+cap "tspc_r_0/Z4" "tspc_r_1/Z4" 9.72973
+cap "tspc_r_0/GND" "tspc_r_0/Z4" 6.66667
+cap "tspc_r_0/R" "tspc_r_0/GND" 80.745
+cap "tspc_r_0/Z3" "tspc_r_0/R" 155.78
+cap "tspc_r_0/VDD" "tspc_r_0/GND" 53.6
+cap "tspc_r_0/VDD" "tspc_r_0/R" 66.6667
+cap "tspc_r_0/clk" "tspc_r_0/R" 103.99
+cap "tspc_r_0/w_n290_n40#" "tspc_r_0/Z2" 12.775
+cap "tspc_r_0/VDD" "tspc_r_0/Z2" 72
+cap "tspc_r_0/VDD" "tspc_r_0/Z3" 10.9091
+cap "tspc_r_0/VDD" "tspc_r_0/clk" 44.4444
+cap "tspc_r_1/z5" "tspc_r_0/z5" 4.86486
+cap "tspc_r_1/z5" "tspc_r_0/GND" 6.66667
+cap "tspc_r_0/GND" "tspc_r_0/z5" 6.66667
+cap "tspc_r_0/Qbar" "and_pd_0/Z1" 21.0517
+cap "tspc_r_0/R" "tspc_r_0/GND" 25.3883
+cap "and_pd_0/A" "and_pd_0/Z1" 193.89
+cap "tspc_r_0/Qbar" "tspc_r_0/GND" 44.4044
+cap "tspc_r_0/Qbar" "tspc_r_0/R" 31.025
+cap "tspc_r_0/VDD" "tspc_r_0/GND" 8.88178e-16
+cap "and_pd_0/A" "tspc_r_0/GND" 269.694
+cap "and_pd_0/Out1" "tspc_r_0/R" 27.725
+cap "and_pd_0/Out1" "tspc_r_0/Qbar" 51.2286
+cap "tspc_r_0/VDD" "tspc_r_0/Qbar" 74.25
+cap "and_pd_0/A" "tspc_r_0/R" 86.5
+cap "and_pd_0/A" "tspc_r_0/Qbar" 17.9186
+cap "tspc_r_0/Q" "tspc_r_0/R" 323.962
+cap "and_pd_0/A" "and_pd_0/Out1" 72.925
+cap "tspc_r_0/Qbar1" "tspc_r_0/R" 287.105
+cap "tspc_r_0/Z3" "tspc_r_0/R" 56.18
+cap "tspc_r_0/Q" "and_pd_0/Out1" 77.035
+cap "tspc_r_0/Q" "and_pd_0/A" 244.523
+cap "and_pd_0/VDD" "tspc_r_0/VDD" 30.4
+cap "and_pd_0/GND" "DOWN" 113.28
+cap "and_pd_0/Out" "DOWN" 90.78
+cap "and_pd_0/Out" "and_pd_0/GND" 16.129
+cap "and_pd_0/Out1" "DOWN" -179.782
+cap "and_pd_0/Out1" "and_pd_0/Out" 11.685
+cap "and_pd_0/B" "and_pd_0/Out" 49.0118
+cap "and_pd_0/B" "and_pd_0/Out1" -216.377
+cap "VDD" "tspc_r_0/VDD" 5.88
+cap "and_pd_0/VDD" "tspc_r_0/VDD" 4.02
+merge "and_pd_0/VSUBS" "tspc_r_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "tspc_r_1/VSUBS" "tspc_r_0/VSUBS"
+merge "tspc_r_0/VSUBS" "VSUBS"
+merge "and_pd_0/GND" "tspc_r_1/GND" -1779.31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -112600 -9300 0 0 0 0
+merge "tspc_r_1/GND" "tspc_r_0/GND"
+merge "tspc_r_0/GND" "GND"
+merge "and_pd_0/B" "UP" 18.31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1800 -320 0 0 0 0 0 0 0 0 0 0
+merge "UP" "tspc_r_0/Q"
+merge "tspc_r_0/Q" "m1_2010_600#"
+merge "and_pd_0/Out" "tspc_r_0/R" -905.537 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 17100 -460 0 0 0 0 0 0 0 0
+merge "tspc_r_0/R" "tspc_r_1/R"
+merge "tspc_r_1/R" "R"
+merge "and_pd_0/a_n60_n30#" "and_pd_0/VDD" 82.345 0 0 0 0 204200 -8150 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -320 0 0 0 0 0 0 -14400 -750 0 0 0 0
+merge "and_pd_0/VDD" "tspc_r_0/VDD"
+merge "tspc_r_0/VDD" "tspc_r_0/D"
+merge "tspc_r_0/D" "tspc_r_0/w_n290_n40#"
+merge "tspc_r_0/w_n290_n40#" "tspc_r_1/VDD"
+merge "tspc_r_1/VDD" "tspc_r_1/D"
+merge "tspc_r_1/D" "VDD"
+merge "tspc_r_1/clk" "DIV" -12.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 0 0 0 0 0
+merge "tspc_r_0/clk" "REF" -12.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 0 0 0 0 0
+merge "and_pd_0/A" "tspc_r_1/Q" -526.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13200 -160 -11100 -830 0 0 0 0 0 0 0 0 0 0
+merge "tspc_r_1/Q" "DOWN"
