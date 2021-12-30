@@ -1386,10 +1386,6 @@ node "wbs_ack_o" 1 631.648 2888 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "wb_rst_i" 1 631.648 1706 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
 node "wb_clk_i" 1 631.648 524 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "io_analog[6]" "io_analog[6]" 21250
-cap "io_clamp_high[0]" "io_analog[4]" 525
-cap "io_clamp_low[0]" "io_clamp_high[0]" 525
-cap "io_analog[4]" "io_clamp_low[0]" 525
 cap "io_clamp_high[1]" "io_analog[5]" 525
 cap "io_clamp_low[1]" "io_clamp_high[1]" 525
 cap "io_analog[5]" "io_clamp_low[1]" 525
@@ -1407,4 +1403,8 @@ cap "io_analog[6]" "io_analog[6]" 26250
 cap "io_analog[5]" "io_analog[5]" 21250
 cap "io_analog[6]" "io_analog[6]" 21250
 cap "io_analog[6]" "io_analog[6]" 26250
+cap "io_analog[6]" "io_analog[6]" 21250
+cap "io_clamp_high[0]" "io_analog[4]" 525
+cap "io_clamp_low[0]" "io_clamp_high[0]" 525
+cap "io_analog[4]" "io_clamp_low[0]" 525
 merge "cp_0/gnd!" "VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
