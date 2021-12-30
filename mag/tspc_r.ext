@@ -21,7 +21,16 @@ node "clk" 3201 1422.11 140 -120 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "D" 1470 418.74 -250 -140 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34600 2100 0 0 8000 400 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_n290_n40#" 7882 2692.8 -290 -40 nw 0 0 0 0 897600 4960 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "Qbar" "GND" 138.6
+cap "w_n290_n40#" "Z2" 3.04
+cap "w_n290_n40#" "Z1" 7.4
+cap "w_n290_n40#" "VDD" 7.4
+cap "w_n290_n40#" "Q" 1.85
+cap "w_n290_n40#" "Qbar1" 1.82
+cap "w_n290_n40#" "Z3" 11.56
+cap "w_n290_n40#" "clk" 10.355
 cap "VDD" "z5" 6.6
+cap "w_n290_n40#" "Qbar" 1.85
 cap "Q" "z5" 33
 cap "Qbar1" "z5" 203.056
 cap "Z3" "z5" 110
@@ -41,22 +50,15 @@ cap "clk" "Z1" 170.927
 cap "D" "Z2" 47.3222
 cap "Qbar1" "Q" 109.835
 cap "clk" "VDD" 129.37
-cap "w_n290_n40#" "Z2" 3.04
 cap "Z3" "Q" 28.6775
 cap "D" "VDD" 38.5
-cap "w_n290_n40#" "Z1" 7.4
 cap "Z3" "Qbar1" 379.384
-cap "w_n290_n40#" "VDD" 7.4
 cap "clk" "Qbar1" 121.715
-cap "w_n290_n40#" "Q" 1.85
 cap "clk" "Z3" 652.716
 cap "Z2" "Z4" 137.657
-cap "w_n290_n40#" "Qbar1" 1.82
 cap "Z2" "GND" 142.361
-cap "w_n290_n40#" "Z3" 11.56
 cap "D" "clk" 31.5485
 cap "Z2" "R" 208.97
-cap "w_n290_n40#" "clk" 10.355
 cap "VDD" "GND" 17.6
 cap "Q" "GND" 263.95
 cap "Z3" "Z4" 201.943
@@ -72,10 +74,8 @@ cap "Z3" "R" 137.379
 cap "D" "GND" 14.4375
 cap "clk" "R" 508.778
 cap "D" "R" 16.14
-cap "w_n290_n40#" "Qbar" 1.85
 cap "GND" "Z4" 527.304
 cap "R" "GND" 35.3744
-cap "Qbar" "GND" 138.6
 device msubckt sky130_fd_pr__nfet_01v8 1580 -480 1581 -479 l=30 w=180 "VSUBS" "Q" 60 0 "GND" 180 0 "Qbar" 180 0
 device msubckt sky130_fd_pr__nfet_01v8 1330 -480 1331 -479 l=30 w=180 "VSUBS" "Qbar1" 60 0 "GND" 180 0 "Q" 180 0
 device msubckt sky130_fd_pr__nfet_01v8 1080 -480 1081 -479 l=30 w=180 "VSUBS" "Z3" 60 0 "GND" 180 0 "z5" 180 0

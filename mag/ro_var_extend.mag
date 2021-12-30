@@ -1,12 +1,16 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1640806371
+timestamp 1640901061
+<< error_p >>
+rect -210 360 -119 760
+rect 6107 360 6180 760
 << nwell >>
 rect -250 320 6220 1010
-rect -116 -750 186 -397
-rect 2858 -752 3160 -399
-rect 5822 -756 6124 -403
+rect -120 -750 190 -360
+rect 2850 -750 3160 -360
+rect 2858 -752 3160 -750
+rect 5820 -760 6130 -370
 << nmos >>
 rect -110 -20 -50 180
 rect 2964 -20 3024 180
@@ -556,9 +560,9 @@ rect -200 210 6270 230
 << labels >>
 rlabel locali 10 200 10 200 1 out1
 rlabel locali 3074 190 3074 190 1 out2
-rlabel locali 6020 900 6020 900 1 vdd
 rlabel locali 5980 -160 5980 -160 1 gnd
 rlabel viali 6220 260 6220 260 1 out3
 rlabel locali 6130 190 6130 190 1 out3
 rlabel locali 6286 -610 6286 -610 1 vcont
+rlabel locali 6020 900 6020 900 1 vdd
 << end >>
