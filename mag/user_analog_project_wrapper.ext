@@ -1,13 +1,10 @@
-timestamp 1640863034
+timestamp 1640881500
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
-use divider divider_0 1 0 117210 0 1 680798
-use pd pd_0 1 0 92466 0 1 681216
-use ro_complete ro_complete_0 1 0 14326 0 1 689220
-use cp cp_0 1 0 66630 0 1 683860
+use ro_complete ro_complete_0 1 0 19988 0 1 655326
 port "io_analog[4]" 41 329294 702300 334294 704800 m5
 port "io_analog[4]" 47 318994 702300 323994 704800 m5
 port "io_analog[5]" 42 227594 702300 232594 704800 m5
@@ -1389,28 +1386,25 @@ node "wbs_ack_o" 1 631.648 2888 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "wb_rst_i" 1 631.648 1706 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
 node "wb_clk_i" 1 631.648 524 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "io_clamp_high[0]" "io_analog[4]" 525
-cap "io_clamp_low[0]" "io_clamp_high[0]" 525
-cap "io_analog[4]" "io_clamp_low[0]" 525
+cap "io_analog[6]" "io_analog[6]" 21250
+cap "io_analog[5]" "io_analog[5]" 26250
 cap "io_clamp_high[1]" "io_analog[5]" 525
 cap "io_clamp_low[1]" "io_clamp_high[1]" 525
-cap "io_analog[5]" "io_clamp_low[1]" 525
-cap "io_analog[4]" "io_analog[4]" 26250
-cap "io_clamp_high[2]" "io_analog[6]" 525
-cap "io_analog[4]" "io_analog[4]" 26250
-cap "io_clamp_low[2]" "io_clamp_high[2]" 525
 cap "io_analog[5]" "io_analog[5]" 26250
-cap "io_analog[4]" "io_analog[4]" 21250
+cap "io_analog[5]" "io_clamp_low[1]" 525
+cap "io_analog[6]" "io_analog[6]" 26250
+cap "io_clamp_high[2]" "io_analog[6]" 525
+cap "io_analog[6]" "io_analog[6]" 26250
+cap "io_clamp_low[2]" "io_clamp_high[2]" 525
 cap "io_analog[6]" "io_clamp_low[2]" 525
 cap "io_analog[4]" "io_analog[4]" 21250
-cap "io_analog[5]" "io_analog[5]" 26250
+cap "io_analog[4]" "io_analog[4]" 21250
 cap "io_analog[5]" "io_analog[5]" 21250
-cap "io_analog[6]" "io_analog[6]" 26250
+cap "io_clamp_high[0]" "io_analog[4]" 525
+cap "io_analog[4]" "io_analog[4]" 26250
 cap "io_analog[5]" "io_analog[5]" 21250
+cap "io_clamp_low[0]" "io_clamp_high[0]" 525
 cap "io_analog[6]" "io_analog[6]" 21250
-cap "io_analog[6]" "io_analog[6]" 26250
-cap "io_analog[6]" "io_analog[6]" 21250
-merge "divider_0/VSUBS" "pd_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "pd_0/VSUBS" "cp_0/gnd!"
-merge "cp_0/gnd!" "ro_complete_0/a_7790_n10640#"
-merge "ro_complete_0/a_7790_n10640#" "VSUBS"
+cap "io_analog[4]" "io_clamp_low[0]" 525
+cap "io_analog[4]" "io_analog[4]" 26250
+merge "ro_complete_0/a_7790_n10640#" "VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
