@@ -143,11 +143,11 @@ module user_analog_proj_example (
     
     cp por1 (
 	    `ifdef USE_POWER_PINS
-	        .vdd1v8(vdda1),
-            .vss(vssa1),
+	        .vdd(vdda1),
+            .gnd(vssa1),
         `endif
         .out(analog0),
-        .up(analog1),
+        .upbar(analog1),
         .down(analog2),
         .vbias(analog3)
     );

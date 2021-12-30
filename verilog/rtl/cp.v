@@ -21,11 +21,11 @@
 
 module cp(
 `ifdef USE_POWER_PINS
-    inout vdd1v8,
-    inout vss,
+    inout vdd,
+    inout gnd,
 `endif
     output out,
-    input up,
+    input upbar,
     input down,
     input vbias
 );
