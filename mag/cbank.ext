@@ -26,6 +26,9 @@ node "a_3600_n30#" 133 1402.86 3600 -30 ndif 0 0 0 0 0 0 0 0 19600 560 0 0 0 0 0
 node "a_2720_n30#" 133 1402.86 2720 -30 ndif 0 0 0 0 0 0 0 0 19600 560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19600 560 19600 560 19600 560 642800 4060 0 0 0 0 0 0
 node "a_1840_n30#" 120 0 1840 -30 ndif 0 0 0 0 0 0 0 0 19600 560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "gnd!" 0 0 4650 -1660 ppd 0 0 0 0 0 0 0 0 0 0 67600 1040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 482200 8300 403200 6720 403200 6720 1919200 11580 2616000 18040 0 0 0 0
+cap "a_1840_n30#" "li_1840_n30#" 18.13
+cap "v" "li_1840_n30#" 1301.39
+cap "a_2720_n30#" "li_1840_n30#" 435.273
 cap "a_6220_n30#" "v" 1301.39
 cap "a_5320_n30#" "v" 1301.39
 cap "a_5320_n30#" "a_6220_n30#" 368.308
@@ -35,9 +38,6 @@ cap "a_4460_n30#" "a_5320_n30#" 399
 cap "a_2720_n30#" "v" 1301.39
 cap "a_3600_n30#" "a_4460_n30#" 399
 cap "a_2720_n30#" "a_3600_n30#" 281.647
-cap "v" "li_1840_n30#" 1301.39
-cap "a_2720_n30#" "li_1840_n30#" 435.273
-cap "a_1840_n30#" "li_1840_n30#" 18.13
 device csubckt sky130_fd_pr__cap_mim_m3_1 6070 590 6071 591 w=560 l=560 "None" "v" 1920 0 "a_6220_n30#" 1440 0
 device csubckt sky130_fd_pr__cap_mim_m3_1 5190 590 5191 591 w=560 l=560 "None" "v" 1920 0 "a_5320_n30#" 1440 0
 device csubckt sky130_fd_pr__cap_mim_m3_1 4320 590 4321 591 w=560 l=560 "None" "v" 1920 0 "a_4460_n30#" 1440 0
@@ -45,18 +45,18 @@ device csubckt sky130_fd_pr__cap_mim_m3_1 3450 590 3451 591 w=560 l=560 "None" "
 device csubckt sky130_fd_pr__cap_mim_m3_1 2530 590 2531 591 w=560 l=560 "None" "v" 1920 0 "a_2720_n30#" 1440 0
 device csubckt sky130_fd_pr__cap_mim_m3_1 1670 590 1671 591 w=560 l=560 "None" "v" 1920 0 "li_1840_n30#" 1440 0
 device csubckt sky130_fd_pr__cap_mim_m3_1 330 130 331 131 w=1040 l=1000 "None" "v" 3760 0 "gnd!" 1440 0
-cap "switch_0/vcont" "switch_0/vin" 83.635
 cap "switch_1/vcont" "switch_1/vout" 4.23077
 cap "switch_1/vcont" "switch_1/vin" 83.635
 cap "switch_0/vcont" "switch_0/vout" 4.23077
-cap "switch_2/vcont" "switch_2/vout" 4.23077
-cap "switch_2/vcont" "switch_2/vin" 83.635
-cap "switch_4/vcont" "switch_4/vout" 4.23077
-cap "switch_4/vcont" "switch_4/vin" 83.635
-cap "switch_3/vcont" "switch_3/vout" 4.23077
+cap "switch_0/vcont" "switch_0/vin" 83.635
+cap "switch_2/vout" "switch_2/vcont" 4.23077
+cap "switch_2/vin" "switch_2/vcont" 83.635
+cap "switch_4/vout" "switch_4/vcont" 4.23077
+cap "switch_4/vin" "switch_4/vcont" 83.635
+cap "switch_3/vout" "switch_3/vcont" 4.23077
 cap "switch_3/vcont" "switch_3/vin" 83.635
-cap "switch_5/vcont" "switch_5/vout" 4.23077
-cap "switch_5/vcont" "switch_5/vin" 83.635
+cap "switch_5/vout" "switch_5/vcont" 4.23077
+cap "switch_5/vin" "switch_5/vcont" 83.635
 merge "switch_5/vout" "switch_4/VSUBS" -915.086 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 91320 -1316 93600 0 93600 0 139137 -1408 -72040 -3202 0 0 0 0
 merge "switch_4/VSUBS" "switch_4/vout"
 merge "switch_4/vout" "switch_5/VSUBS"
