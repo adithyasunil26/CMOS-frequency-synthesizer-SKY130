@@ -1,11 +1,12 @@
-timestamp 1640899833
+timestamp 1640900248
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use divider divider_0 1 0 125466 0 1 682732
+use pd pd_0 1 0 94826 0 1 683320
 use cp cp_0 1 0 66630 0 1 683860
-parameters sky130_fd_pr__cap_var_lvt l=l w=w a1=as a2=ad p1=ps p2=pd
 port "io_analog[4]" 41 329294 702300 334294 704800 m5
 port "io_analog[4]" 47 318994 702300 323994 704800 m5
 port "io_analog[5]" 42 227594 702300 232594 704800 m5
@@ -1386,10 +1387,7 @@ node "wbs_cyc_i" 1 631.648 4070 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "wbs_ack_o" 1 631.648 2888 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
 node "wb_rst_i" 1 631.648 1706 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
 node "wb_clk_i" 1 631.648 524 -800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 143360 2784 0 0 0 0 0 0 0 0
-node "a_19580_685966#" 434 217.843 19580 685966 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13284 760 0 0 4900 280 4900 280 0 0 0 0 0 0 0 0 0 0
-node "w_19462_685682#" 3146 318.212 19462 685682 nw 0 0 0 0 115364 1368 0 0 38800 1188 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12512 872 16192 888 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "w_19462_685682#" "a_19580_685966#" 0.7474
 cap "io_clamp_high[0]" "io_analog[4]" 525
 cap "io_clamp_low[0]" "io_clamp_high[0]" 525
 cap "io_analog[4]" "io_clamp_low[0]" 525
@@ -1401,8 +1399,8 @@ cap "io_clamp_high[2]" "io_analog[6]" 525
 cap "io_analog[4]" "io_analog[4]" 26250
 cap "io_clamp_low[2]" "io_clamp_high[2]" 525
 cap "io_analog[5]" "io_analog[5]" 26250
-cap "io_analog[4]" "io_analog[4]" 21250
 cap "io_analog[6]" "io_clamp_low[2]" 525
+cap "io_analog[4]" "io_analog[4]" 21250
 cap "io_analog[4]" "io_analog[4]" 21250
 cap "io_analog[5]" "io_analog[5]" 26250
 cap "io_analog[5]" "io_analog[5]" 21250
@@ -1411,5 +1409,6 @@ cap "io_analog[5]" "io_analog[5]" 21250
 cap "io_analog[6]" "io_analog[6]" 21250
 cap "io_analog[6]" "io_analog[6]" 26250
 cap "io_analog[6]" "io_analog[6]" 21250
-device subckt sky130_fd_pr__cap_var_lvt 19595 685744 19596 685745 l=36 w=200 "w_19462_685682#" "a_19580_685966#" 72 0 "w_19462_685682#" 400 0
-merge "cp_0/gnd!" "VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "divider_0/VSUBS" "pd_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pd_0/VSUBS" "cp_0/gnd!"
+merge "cp_0/gnd!" "VSUBS"

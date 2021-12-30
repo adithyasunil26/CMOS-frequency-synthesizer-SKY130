@@ -28,15 +28,15 @@ cap "a_280_n230#" "z1" 70.125
 cap "a_n20_20#" "GND" 8.55556
 cap "A" "z1" 8.25
 cap "a_n20_20#" "OUT" 838.2
-cap "VDD" "vdd!" 5.92
 cap "A" "GND" 57.75
 cap "a_280_n230#" "OUT" 150.608
 cap "a_280_n230#" "a_n20_20#" 13.0842
 cap "A" "OUT" 9.74286
 cap "A" "a_n20_20#" 13.0842
+cap "A" "a_280_n230#" 81.6947
+cap "VDD" "vdd!" 5.92
 cap "VDD" "OUT" 2.96
 cap "VDD" "a_n20_20#" 21.8
-cap "A" "a_280_n230#" 81.6947
 device msubckt sky130_fd_pr__nfet_01v8 310 -450 311 -449 l=30 w=200 "a_490_n530#" "a_280_n230#" 60 0 "z1" 200 0 "OUT" 200 0
 device msubckt sky130_fd_pr__nfet_01v8 60 -450 61 -449 l=30 w=200 "a_490_n530#" "A" 60 0 "GND" 200 0 "z1" 200 0
 device msubckt sky130_fd_pr__pfet_01v8 310 20 311 21 l=30 w=400 "VDD" "a_280_n230#" 60 0 "a_n20_20#" 400 0 "OUT" 400 0
