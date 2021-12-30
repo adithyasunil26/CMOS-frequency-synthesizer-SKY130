@@ -15,7 +15,7 @@
 
 `default_nettype none
 
-`include "example_por.v"
+`include "cp.v"
 
 /*
  * I/O mapping for analog
@@ -177,44 +177,44 @@ module user_analog_proj_example (
     // Monitor the 3.3V output with mprj_io[10] = gpio_analog[3]
     // Monitor the 1.8V outputs with mprj_io[11,12] = io_out[11,12]
 
-    example_por por1 (
-	`ifdef USE_POWER_PINS
-	    .vdd3v3(vdda1),
-	    .vdd1v8(vccd1),
-	    .vss(vssa1),
-	`endif
-	.porb_h(gpio_analog[3]),	// 3.3V domain output
-	.porb_l(io11),			// 1.8V domain output
-	.por_l(io12)			// 1.8V domain output
-    );
+    // cp por1 (
+	//     `ifdef USE_POWER_PINS
+	//         .vdd1v8(),
+    //         .vss,
+    //     `endif
+    //     .out,
+    //     .up,
+    //     .down,
+    //     .vbias			// 1.8V domain output
+    // );
 
     // Instantiate 2nd POR with the analog power supply on one of the
     // analog pins.  NOTE:  io_analog[4] = mproj_io[18] and is the same
     // pad with io_clamp_high/low[0].
 
-    `ifdef USE_POWER_PINS
-	assign isupply = io_analog[4];
-    	assign io_clamp_high[0] = isupply;
-    	assign io_clamp_low[0] = vssa1;
+    // `ifdef USE_POWER_PINS
+	// assign isupply = io_analog[4];
+    // 	assign io_clamp_high[0] = isupply;
+    // 	assign io_clamp_low[0] = vssa1;
 
-	// Tie off remaining clamps
-    	assign io_clamp_high[2:1] = vssa1;
-    	assign io_clamp_low[2:1] = vssa1;
-    `endif
+	// // Tie off remaining clamps
+    // 	assign io_clamp_high[2:1] = vssa1;
+    // 	assign io_clamp_low[2:1] = vssa1;
+    // `endif
 
     // Monitor the 3.3V output with mprj_io[25] = gpio_analog[7]
     // Monitor the 1.8V outputs with mprj_io[26,27] = io_out[15,16]
 
-    example_por por2 (
-	`ifdef USE_POWER_PINS
-	    .vdd3v3(isupply),
-	    .vdd1v8(vccd1),
-	    .vss(vssa1),
-	`endif
-	.porb_h(gpio_analog[7]),	// 3.3V domain output
-	.porb_l(io15),			// 1.8V domain output
-	.por_l(io16)			// 1.8V domain output
-    );
+    // example_por por2 (
+	// `ifdef USE_POWER_PINS
+	//     .vdd3v3(isupply),
+	//     .vdd1v8(vccd1),
+	//     .vss(vssa1),
+	// `endif
+	// .porb_h(gpio_analog[7]),	// 3.3V domain output
+	// .porb_l(io15),			// 1.8V domain output
+	// .por_l(io16)			// 1.8V domain output
+    // );
 
 endmodule
 
