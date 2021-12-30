@@ -134,7 +134,7 @@ module user_analog_proj_example (
     wire [`MPRJ_IO_PADS-`ANALOG_PADS-1:0] io_oeb;
     wire [`ANALOG_PADS-1:0] io_analog;
 
-    wire analog0, analog2, analog3, analog4;
+    wire analog0, analog1, analog2, analog3;
 
     assign io_analog[0] = analog0;
     assign io_analog[1] = analog1;
@@ -147,8 +147,8 @@ module user_analog_proj_example (
             .gnd(vssa1),
         `endif
         .out(analog0),
-        .upbar(analog1),
-        .down(analog2),
+        .down(analog1),
+        .upar(analog2),
         .vbias(analog3)
     );
 
