@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1640983325
+timestamp 1640992929
 << nwell >>
 rect 267375 341875 267540 343575
 rect 267345 341390 267565 341585
@@ -862,30 +862,34 @@ rect -50 352000 292050 352050
 rect -50 0 0 352000
 rect 292000 0 292050 352000
 rect -50 -50 292050 0
-use ro_complete  ro_complete_0
-timestamp 1640983325
-transform 1 0 15798 0 1 340722
-box -57 -5330 4455 1440
-use pd  pd_0
-timestamp 1640983325
-transform 1 0 43653 0 1 323704
-box -215 -855 1685 810
+use divbuf  divbuf_0
+timestamp 1640990631
+transform 1 0 58209 0 1 287068
+box -460 -1085 31200 495
 use divider  divider_0
-timestamp 1640983325
+timestamp 1640992929
 transform 1 0 81845 0 1 324332
 box -490 -235 4690 2150
-use cp  cp_1
-timestamp 1640911461
-transform 1 0 265700 0 1 341635
-box -415 -1715 4690 2035
-use cp  cp_0
-timestamp 1640911461
-transform 1 0 98232 0 1 304357
-box -415 -1715 4690 2035
+use pd  pd_0
+timestamp 1640992929
+transform 1 0 43653 0 1 323704
+box -215 -855 1685 810
+use ro_complete  ro_complete_0
+timestamp 1640992929
+transform 1 0 15798 0 1 340722
+box -57 -5330 4455 1440
 use filter  filter_0
 timestamp 1640983258
 transform 1 0 145727 0 1 330199
 box -1800 -11005 6240 390
+use cp  cp_0
+timestamp 1640911461
+transform 1 0 98232 0 1 304357
+box -415 -1715 4690 2035
+use cp  cp_1
+timestamp 1640911461
+transform 1 0 265700 0 1 341635
+box -415 -1715 4690 2035
 << labels >>
 flabel metal3 s 291760 134615 292400 134671 0 FreeSans 560 0 0 0 gpio_analog[0]
 port 0 nsew signal bidirectional

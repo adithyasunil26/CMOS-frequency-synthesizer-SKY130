@@ -26,10 +26,10 @@ cap "w_n120_n750#" "vcont" 140.194
 cap "out3" "out2" 1263.05
 cap "w_n120_n750#" "out2" 789.263
 cap "out3" "out1" 1156.32
-cap "vdd" "out2" 235.622
 cap "w_n120_n750#" "out1" 569.035
-cap "vdd" "out1" 230.66
 cap "w_n120_n750#" "out3" 215.464
+cap "vdd" "out2" 235.622
+cap "vdd" "out1" 230.66
 cap "vdd" "out3" 230.554
 device subckt sky130_fd_pr__cap_var_lvt 5955 -694 5956 -693 l=36 w=200 "w_n120_n750#" "out3" 72 0 "w_n120_n750#" 400 0
 device subckt sky130_fd_pr__cap_var_lvt 2991 -690 2992 -689 l=36 w=200 "w_n120_n750#" "out2" 72 0 "w_n120_n750#" 400 0
