@@ -1,4 +1,4 @@
-timestamp 1640957225
+timestamp 1640960365
 version 8.3
 tech sky130A
 style ngspice()
@@ -15,18 +15,18 @@ node "vdd!" 5769 1998 -100 20 pdif 0 0 0 0 0 0 0 0 0 0 144000 4080 0 0 0 0 0 0 0
 node "out1" 6488 1253.5 10 20 pdif 0 0 0 0 0 0 0 0 32000 960 83200 2400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53200 3340 0 0 136500 4640 0 0 0 0 0 0 0 0 0 0 0 0
 node "VDD" 1983 2469.6 -170 -30 nw 0 0 0 0 823200 3640 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "OUT" "VDD" 2.3125
+cap "vdd!" "VDD" 48.86
+cap "out1" "VDD" 6.1975
 cap "gnd!" "Z1" 409.78
 cap "OUT" "Z1" 43.6452
-cap "VDD" "OUT" 2.3125
 cap "OUT" "gnd!" 198
 cap "B" "Z1" 67.1786
 cap "A" "gnd!" 57.75
 cap "B" "OUT" 8.8
 cap "vdd!" "Z1" 7.96552
-cap "VDD" "vdd!" 48.86
 cap "out1" "Z1" 356.371
 cap "vdd!" "gnd!" 13.8886
-cap "VDD" "out1" 6.1975
 cap "out1" "gnd!" 226.769
 cap "vdd!" "OUT" 574.768
 cap "A" "B" 87.6201
