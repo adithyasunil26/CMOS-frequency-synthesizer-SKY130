@@ -1,10 +1,6 @@
 magic
 tech sky130A
-timestamp 1640956319
-<< error_s >>
-rect 808 -1589 898 -1180
-rect 808 -3359 898 -2639
-rect 808 -5144 898 -4424
+timestamp 1640959700
 << psubdiff >>
 rect 4315 75 4445 90
 rect 4315 -25 4330 75
@@ -667,22 +663,22 @@ rect 4095 -5205 4455 -5180
 rect 4095 -5305 4330 -5205
 rect 4430 -5305 4455 -5205
 rect 4095 -5330 4455 -5305
-use ro_var_extend  ro_var_extend_0
-timestamp 1640956303
-transform 1 0 487 0 1 675
-box -375 -595 3780 765
 use cbank  cbank_1
-timestamp 1640901595
+timestamp 1640959700
 transform 1 0 -42 0 1 -2705
 box -15 -840 4075 775
 use cbank  cbank_2
-timestamp 1640901595
+timestamp 1640959700
 transform 1 0 -42 0 1 -4490
 box -15 -840 4075 775
 use cbank  cbank_0
-timestamp 1640901595
+timestamp 1640959700
 transform 1 0 -42 0 1 -935
 box -15 -840 4075 775
+use ro_var_extend  ro_var_extend_0
+timestamp 1640959680
+transform 1 0 487 0 1 675
+box -375 -595 3780 765
 << labels >>
 rlabel locali 1123 -825 1123 -825 1 a0
 rlabel locali 1617 -830 1617 -830 1 a1

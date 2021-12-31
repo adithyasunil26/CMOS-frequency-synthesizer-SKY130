@@ -1,4 +1,4 @@
-timestamp 1640957762
+timestamp 1640957225
 version 8.3
 tech sky130A
 style ngspice()
@@ -17,25 +17,25 @@ node "VDD" 1983 2469.6 -170 -30 nw 0 0 0 0 823200 3640 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 cap "gnd!" "Z1" 409.78
 cap "OUT" "Z1" 43.6452
+cap "VDD" "OUT" 2.3125
 cap "OUT" "gnd!" 198
 cap "B" "Z1" 67.1786
 cap "A" "gnd!" 57.75
 cap "B" "OUT" 8.8
 cap "vdd!" "Z1" 7.96552
+cap "VDD" "vdd!" 48.86
 cap "out1" "Z1" 356.371
 cap "vdd!" "gnd!" 13.8886
+cap "VDD" "out1" 6.1975
 cap "out1" "gnd!" 226.769
 cap "vdd!" "OUT" 574.768
 cap "A" "B" 87.6201
 cap "out1" "OUT" 261.752
 cap "vdd!" "B" 13.5882
 cap "vdd!" "A" 13.5882
-cap "VDD" "OUT" 2.3125
 cap "out1" "B" 176.792
 cap "out1" "A" 13.5179
 cap "out1" "vdd!" 1441.54
-cap "VDD" "vdd!" 48.86
-cap "VDD" "out1" 6.1975
 device msubckt sky130_fd_pr__nfet_01v8 480 -670 481 -669 l=30 w=300 "VSUBS" "out1" 60 0 "gnd!" 300 0 "OUT" 300 0
 device msubckt sky130_fd_pr__nfet_01v8 230 -670 231 -669 l=30 w=400 "VSUBS" "B" 60 0 "Z1" 400 0 "out1" 400 0
 device msubckt sky130_fd_pr__nfet_01v8 -20 -670 -19 -669 l=30 w=400 "VSUBS" "A" 60 0 "gnd!" 400 0 "Z1" 400 0

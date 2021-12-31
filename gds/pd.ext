@@ -1,0 +1,158 @@
+timestamp 0
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use tspc_r tspc_r_0 1 0 290 0 -1 -850
+use tspc_r tspc_r_1 1 0 290 0 1 760
+use and_pd and_pd_0 1 0 2200 0 1 790
+port "GND" 2 20 -130 2040 40 m4
+port "DIV" 4 -230 -910 -140 -880 m2
+port "REF" 3 -230 790 -140 820 m2
+port "UP" 5 2830 670 2940 700 m1
+port "R" 7 2280 560 2370 590 m2
+port "R" 7 2870 560 2920 610 m2
+port "DOWN" 6 2830 400 2940 430 m1
+port "VDD" 1 -140 -1430 -80 1340 m4
+port "VDD" 1 1960 1260 2040 1280 nw
+port "VDD" 1 1960 1200 2100 1260 nw
+node "GND" 1 842.66 20 -130 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 343400 4380 0 0 0 0
+node "m4_1440_1280#" 0 173.9 1440 1280 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24600 940 0 0 0 0
+node "DIV" 1 109.532 -230 -910 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6900 520 0 0 0 0 0 0 0 0
+node "REF" 1 109.532 -230 790 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6900 520 0 0 0 0 0 0 0 0
+node "UP" 2 244.23 2830 670 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16200 1140 0 0 0 0 0 0 0 0 0 0
+node "m1_2010_600#" 1 81.02 2010 600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4800 380 0 0 0 0 0 0 0 0 0 0
+node "R" 26 1557.5 2870 560 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 6400 320 114700 7100 0 0 0 0 0 0 0 0
+node "DOWN" 22 1071.98 2830 400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 73300 4780 0 0 0 0 0 0 0 0 0 0
+node "VDD" 76 1895.43 -140 -1430 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3200 320 12800 640 16400 720 20000 800 213800 7140 0 0 0 0
+node "w_0_n1460#" 18910 2199.75 0 -1460 nw 0 0 0 0 662500 5900 0 0 19600 560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 14400 480 14400 480 45800 1300 0 0 0 0
+node "VDD" 27087 2548.65 1960 1200 nw 0 0 0 0 793200 7540 0 0 19600 560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 480 14400 480 14400 480 14400 480 37400 1040 0 0 0 0
+substrate "w_n446_n1456#" 0 0 -446 -1456 pw 870472 15844 0 0 0 0 0 0 0 0 486400 12160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2463100 27820 0 0 0 0 0 0 0 0 0 0 0 0
+cap "R" "GND" 53.75
+cap "DOWN" "GND" 50.15
+cap "VDD" "GND" 113.9
+cap "m1_2010_600#" "UP" 4.5
+cap "VDD" "DIV" 27.9
+cap "R" "UP" 72
+cap "VDD" "m4_1440_1280#" 4.92
+cap "VDD" "REF" 27.9
+cap "DOWN" "UP" 101.25
+cap "DOWN" "m1_2010_600#" 41.625
+cap "DOWN" "R" 185.417
+cap "VDD" "UP" 7.2
+cap "VDD" "R" 11.2838
+cap "w_0_n1460#" "VDD" 0.48
+cap "VDD" "VDD" 0.48
+cap "tspc_r_0/R" "tspc_r_0/Z3" -7.021
+cap "VDD" "tspc_r_0/Z3" 10.9091
+cap "GND" "tspc_r_0/Z1" 14.4375
+cap "VDD" "DIV" 62.5
+cap "VDD" "tspc_r_0/R" 100
+cap "VDD" "tspc_r_0/Z2" 72
+cap "GND" "tspc_r_0/Z3" 7.21875
+cap "tspc_r_0/w_n290_n40#" "tspc_r_0/Z2" 12.775
+cap "GND" "VDD" 99.8267
+cap "GND" "tspc_r_0/Z2" 9.69375
+cap "tspc_r_0/w_n290_n40#" "VDD" 33.548
+cap "tspc_r_0/Q" "tspc_r_0/VDD" 5.68434e-14
+cap "tspc_r_0/Qbar1" "tspc_r_0/w_n276_n506#" 7.21875
+cap "tspc_r_0/R" "tspc_r_0/Z3" 136.361
+cap "tspc_r_0/Qbar" "tspc_r_0/w_n276_n506#" 7.21875
+cap "tspc_r_0/VDD" "tspc_r_0/w_n276_n506#" 45.2812
+cap "tspc_r_0/Q" "tspc_r_0/w_n276_n506#" 7.21875
+cap "tspc_r_0/VDD" "tspc_r_0/Z3" -2.84217e-14
+cap "tspc_r_0/Qbar" "tspc_r_0/VDD" 30.4615
+cap "tspc_r_1/Z4" "tspc_r_0/Z4" 19.4595
+cap "GND" "tspc_r_0/Z4" 13.3333
+cap "tspc_r_1/Z3" "tspc_r_0/R" -9.042
+cap "GND" "tspc_r_1/Z4" 13.3333
+cap "VDD" "tspc_r_0/R" 66.6667
+cap "GND" "tspc_r_0/R" 64.2857
+cap "VDD" "tspc_r_1/Z2" 72
+cap "VDD" "tspc_r_1/Z3" 10.9091
+cap "VDD" "REF" 44.4444
+cap "GND" "VDD" 148.505
+cap "and_pd_0/Z1" "tspc_r_1/Qbar" 21.0517
+cap "tspc_r_0/Q" "R" 86.5
+cap "tspc_r_1/Q" "R" 150.845
+cap "tspc_r_1/Qbar1" "R" 287.105
+cap "tspc_r_1/Z3" "R" 160.382
+cap "R" "GND" 145.652
+cap "tspc_r_1/clk" "R" 103.99
+cap "tspc_r_1/Q" "and_pd_0/Out1" -12.43
+cap "R" "tspc_r_1/Qbar" 31.025
+cap "tspc_r_1/VDD" "GND" 8.88178e-16
+cap "tspc_r_1/Q" "tspc_r_0/Q" 180.938
+cap "tspc_r_0/Q" "GND" 308.57
+cap "tspc_r_1/VDD" "tspc_r_1/Qbar" 64.7625
+cap "and_pd_0/Out1" "tspc_r_1/Qbar" 45.8071
+cap "tspc_r_0/z5" "GND" 13.3333
+cap "tspc_r_0/Q" "tspc_r_1/Qbar" 17.9186
+cap "tspc_r_0/Q" "and_pd_0/Z1" 76.112
+cap "tspc_r_1/Qbar" "GND" 44.4044
+cap "tspc_r_1/z5" "GND" 13.3333
+cap "tspc_r_0/z5" "tspc_r_1/z5" 19.4595
+cap "R" "tspc_r_0/GND" 16.129
+cap "tspc_r_1/Qbar" "and_pd_0/Z1" 1.76471
+cap "DOWN" "and_pd_0/Z1" -9.852
+cap "and_pd_0/Out1" "R" 137.14
+cap "DOWN" "tspc_r_0/GND" 113.28
+cap "and_pd_0/Out1" "tspc_r_1/Qbar" 1.71875
+cap "UP" "R" 222.129
+cap "DOWN" "R" 90.78
+cap "tspc_r_0/w_n276_n506#" "tspc_r_0/GND" 9.20833
+cap "tspc_r_0/w_n276_n506#" "and_pd_0/Z1" 0.916667
+cap "VDD" "R" 56.5714
+cap "UP" "and_pd_0/Out1" 70.6975
+cap "tspc_r_0/w_n276_n506#" "R" 71.3216
+cap "DOWN" "and_pd_0/Out1" 105.892
+cap "tspc_r_0/w_n276_n506#" "and_pd_0/Out1" 6.41667
+cap "VDD" "UP" 2.66454e-15
+cap "VDD" "and_pd_0/Out1" 12.375
+cap "DOWN" "UP" 61.428
+cap "w_n446_n1456#" "tspc_r_1/Z2" 9.69375
+cap "tspc_r_1/w_n290_n40#" "tspc_r_1/Z2" 12.775
+cap "w_n446_n1456#" "tspc_r_1/Z1" 14.4375
+cap "w_n446_n1456#" "tspc_r_1/Z3" 7.21875
+cap "tspc_r_1/w_n290_n40#" "tspc_r_1/VDD" 33.548
+cap "w_n446_n1456#" "tspc_r_1/VDD" 58.522
+cap "tspc_r_1/Qbar" "and_pd_0/Out1" 5.42143
+cap "and_pd_0/Out1" "w_n446_n1456#" 7.21875
+cap "tspc_r_1/Qbar" "w_n446_n1456#" 7.21875
+cap "w_n446_n1456#" "tspc_r_1/Q" 7.21875
+cap "w_n446_n1456#" "tspc_r_1/Qbar1" 7.21875
+cap "VDD" "tspc_r_1/VDD" 43.262
+cap "tspc_r_1/Q" "and_pd_0/A" 2.15625
+cap "tspc_r_1/Qbar" "tspc_r_1/VDD" 9.4875
+cap "w_n446_n1456#" "tspc_r_1/VDD" 54.6607
+cap "w_n446_n1456#" "and_pd_0/Out" 11.4354
+cap "w_n446_n1456#" "and_pd_0/Out1" 7.21875
+cap "w_n446_n1456#" "VDD" 18.7589
+merge "and_pd_0/w_n86_n496#" "and_pd_0/GND" -6928.56 -101246 -10206 0 0 0 0 0 0 0 0 212812 -7926 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -44382 -19097 0 0 0 0 0 0 -544244 -9300 0 0 0 0
+merge "and_pd_0/GND" "tspc_r_1/w_n276_n506#"
+merge "tspc_r_1/w_n276_n506#" "tspc_r_1/GND"
+merge "tspc_r_1/GND" "tspc_r_0/GND"
+merge "tspc_r_0/GND" "GND"
+merge "GND" "tspc_r_0/w_n276_n506#"
+merge "tspc_r_0/w_n276_n506#" "w_n446_n1456#"
+merge "and_pd_0/A" "tspc_r_0/Q" -456.612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16392 -160 -23430 -60 0 0 0 0 0 0 0 0 0 0
+merge "tspc_r_0/Q" "DOWN"
+merge "and_pd_0/a_n60_n30#" "and_pd_0/VDD" 312.509 0 0 0 0 361220 -10832 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28440 -320 0 0 0 0 0 0 67584 -1940 0 0 0 0
+merge "and_pd_0/VDD" "tspc_r_1/VDD"
+merge "tspc_r_1/VDD" "m4_1440_1280#"
+merge "m4_1440_1280#" "tspc_r_1/D"
+merge "tspc_r_1/D" "tspc_r_1/w_n290_n40#"
+merge "tspc_r_1/w_n290_n40#" "tspc_r_0/VDD"
+merge "tspc_r_0/VDD" "tspc_r_0/w_n290_n40#"
+merge "tspc_r_0/w_n290_n40#" "w_0_n1460#"
+merge "w_0_n1460#" "tspc_r_0/D"
+merge "tspc_r_0/D" "VDD"
+merge "and_pd_0/Out" "tspc_r_1/R" -959.232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 14724 -460 0 0 0 0 0 0 0 0
+merge "tspc_r_1/R" "tspc_r_0/R"
+merge "tspc_r_0/R" "R"
+merge "tspc_r_1/clk" "REF" -12.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 0 0 0 0 0
+merge "tspc_r_0/clk" "DIV" -12.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 0 0 0 0 0
+merge "and_pd_0/B" "UP" -199.048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80920 -320 0 0 0 0 0 0 0 0 0 0
+merge "UP" "tspc_r_1/Q"
+merge "tspc_r_1/Q" "m1_2010_600#"

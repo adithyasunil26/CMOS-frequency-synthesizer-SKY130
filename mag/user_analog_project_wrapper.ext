@@ -1,10 +1,15 @@
-timestamp 1640911630
+timestamp 1640959832
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
 use cp cp_1 1 0 531400 0 1 683270
+use cp cp_0 1 0 196464 0 1 608714
+use filter filter_0 1 0 224356 0 1 680484
+use divider divider_0 1 0 163690 0 1 648664
+use pd pd_0 1 0 87306 0 1 647408
+use ro_complete ro_complete_0 1 0 31596 0 1 681444
 port "io_analog[4]" 41 329294 702300 334294 704800 m5
 port "io_analog[4]" 47 318994 702300 323994 704800 m5
 port "io_analog[5]" 42 227594 702300 232594 704800 m5
@@ -1388,6 +1393,13 @@ node "io_analog[2]" 74 103560 465394 702300 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_534690_682780#" 2061 2427.03 534690 682780 nw 0 0 0 0 171600 1660 0 0 78300 1120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 67500 1040 67500 1040 67500 1040 171600 1660 1425600 9300 0 0 0 0
 node "w_534750_683750#" 17515 3366 534750 683750 nw 0 0 0 0 1122000 7460 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "io_analog[3]" "vssa1" 6389.64
+cap "io_analog[1]" "io_analog[0]" 12301.4
+cap "io_analog[2]" "vssa1" 9275.17
+cap "io_clamp_high[0]" "io_analog[4]" 525
+cap "io_clamp_low[0]" "io_clamp_high[0]" 525
+cap "io_analog[4]" "io_clamp_low[0]" 525
+cap "w_534750_683750#" "w_534690_682780#" 224.4
 cap "io_clamp_high[1]" "io_analog[5]" 525
 cap "io_clamp_low[1]" "io_clamp_high[1]" 525
 cap "io_analog[5]" "io_clamp_low[1]" 525
@@ -1399,37 +1411,30 @@ cap "io_analog[4]" "io_analog[4]" 26250
 cap "io_analog[5]" "io_analog[5]" 26250
 cap "io_analog[5]" "io_analog[5]" 26250
 cap "io_analog[4]" "io_analog[4]" 21250
-cap "io_analog[1]" "io_analog[0]" 12301.4
 cap "io_analog[6]" "io_analog[6]" 26250
 cap "io_analog[4]" "io_analog[4]" 21250
 cap "io_analog[5]" "io_analog[5]" 21250
 cap "io_analog[6]" "io_analog[6]" 26250
+cap "io_analog[5]" "io_analog[5]" 21250
+cap "io_analog[6]" "io_analog[6]" 21250
+cap "io_analog[6]" "io_analog[6]" 21250
 cap "io_analog[0]" "vdda1" 18313.2
 cap "io_analog[1]" "vdda1" 23516.2
-cap "io_analog[5]" "io_analog[5]" 21250
 cap "io_analog[2]" "vdda1" 219.25
-cap "io_analog[6]" "io_analog[6]" 21250
-cap "io_analog[3]" "vssa1" 6389.64
-cap "io_analog[2]" "vssa1" 9275.17
-cap "io_analog[6]" "io_analog[6]" 21250
-cap "w_534750_683750#" "w_534690_682780#" 224.4
-cap "io_clamp_high[0]" "io_analog[4]" 525
-cap "io_clamp_low[0]" "io_clamp_high[0]" 525
-cap "io_analog[4]" "io_clamp_low[0]" 525
 cap "cp_1/gnd!" "cp_1/down" 439.89
 cap "cp_1/gnd!" "io_analog[1]" -20.89
 cap "cp_1/vbias" "cp_1/gnd!" 6.79412
 cap "cp_1/vbias" "cp_1/gnd!" 8.73529
 cap "cp_1/vbias" "cp_1/gnd!" 6.79412
-cap "cp_1/vbias" "cp_1/gnd!" 8.73529
+cap "cp_1/gnd!" "cp_1/vbias" 8.73529
 cap "cp_1/a_10_n50#" "cp_1/vbias" 31.68
-cap "cp_1/a_1710_n2840#" "cp_1/a_1710_0#" 37.5
+cap "cp_1/a_1710_0#" "cp_1/a_1710_n2840#" 37.5
 cap "cp_1/a_1710_n2840#" "cp_1/a_3060_0#" 99.11
 cap "cp_1/a_1710_n2840#" "cp_1/a_3060_0#" 243.801
 cap "cp_1/a_3060_0#" "w_534690_682780#" 1083.86
 cap "w_534750_683750#" "w_534690_682780#" -39.04
+cap "w_534690_682780#" "w_534750_683750#" -28
 cap "cp_1/a_3060_0#" "w_534690_682780#" 904.4
-cap "w_534750_683750#" "w_534690_682780#" -28
 cap "cp_1/a_3060_0#" "w_534690_682780#" 50.49
 cap "cp_1/a_3060_0#" "w_534690_682780#" 119.25
 cap "w_534750_683750#" "w_534690_682780#" -15.96
@@ -1439,8 +1444,13 @@ merge "cp_1/a_1710_n2840#" "vdda1" -20146.9 0 0 0 0 -5982920 -15262 0 0 173200 0
 merge "vdda1" "cp_1/vdd!"
 merge "cp_1/vdd!" "w_534690_682780#"
 merge "w_534690_682780#" "w_534750_683750#"
-merge "cp_1/gnd!" "VSUBS" -13903.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24058574 -32614 0 0 0 0 0 0
-merge "VSUBS" "vssa1"
+merge "cp_1/gnd!" "vssa1" -13903.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24058574 -32614 0 0 0 0 0 0
+merge "vssa1" "ro_complete_0/a_7790_n10640#"
+merge "ro_complete_0/a_7790_n10640#" "filter_0/v"
+merge "filter_0/v" "divider_0/a_n940_n20#"
+merge "divider_0/a_n940_n20#" "pd_0/a_n420_n1430#"
+merge "pd_0/a_n420_n1430#" "cp_0/gnd!"
+merge "cp_0/gnd!" "VSUBS"
 merge "cp_1/down" "io_analog[1]" -8142.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -163500 -2410 -16700 -870 -226500 -1840 -12500000 -15000 0 0 0 0 0 0
 merge "cp_1/vbias" "io_analog[3]" -6896.59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65310 -480 0 0 0 0 -12500000 -15000 0 0 0 0 0 0
 merge "cp_1/upbar" "io_analog[2]" -6942.45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 55080 -460 0 0 0 0 -12500000 -15000 0 0 0 0 0 0
