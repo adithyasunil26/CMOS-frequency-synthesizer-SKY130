@@ -21,11 +21,11 @@ node "a_3976_n2998#" 382 1341.76 3976 -2998 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 substrate "v" 0 0 4130 -2280 li 6814080 87360 0 0 0 0 0 0 0 0 4732000 72800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51962080 147668 853254 8326 97600 1760 241185900 76920 35214504 24450 0 0 0 0
 equiv "v" "gnd!"
 equiv "v" "gnd"
-device csubckt sky130_fd_pr__cap_mim_m3_1 -2460 -19830 -2459 -19829 w=6000 l=6000 "None" "a_3976_n5230#" 23616 0 "v" 3600 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 4120 -19730 4121 -19729 w=6000 l=6000 "None" "a_3976_n5230#" 23616 0 "v" 3600 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -2460 -13520 -2459 -13519 w=6000 l=6000 "None" "a_3976_n5230#" 23616 0 "v" 3600 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 4120 -13340 4121 -13339 w=6000 l=6000 "None" "a_3976_n5230#" 23616 0 "v" 3600 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 4770 -7130 4771 -7129 w=6000 l=6000 "None" "v" 23616 0 "v" 3600 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -2460 -7130 -2459 -7129 w=6000 l=6000 "None" "a_3976_n5230#" 23616 0 "v" 3600 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -2460 -19830 -2459 -19829 w=6000 l=6000 "None" "a_3976_n5230#" 23616 0 "v" 400 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 4120 -19730 4121 -19729 w=6000 l=6000 "None" "a_3976_n5230#" 23616 0 "v" 400 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -2460 -13520 -2459 -13519 w=6000 l=6000 "None" "a_3976_n5230#" 23616 0 "v" 400 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 4120 -13340 4121 -13339 w=6000 l=6000 "None" "a_3976_n5230#" 23616 0 "v" 400 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 4770 -7130 4771 -7129 w=6000 l=6000 "None" "v" 23616 0 "v" 400 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -2460 -7130 -2459 -7129 w=6000 l=6000 "None" "a_3976_n5230#" 23616 0 "v" 400 0
 device rsubckt sky130_fd_pr__res_xhigh_po 4294 -4798 4295 -4797 l=1800 w=70 "v" "a_4294_n4798#" 0 0 "v" 70 0 "a_3976_n2998#" 70 0
 device rsubckt sky130_fd_pr__res_xhigh_po 3976 -4798 3977 -4797 l=1800 w=70 "v" "a_3976_n4798#" 0 0 "a_3976_n5230#" 70 0 "a_3976_n2998#" 70 0
