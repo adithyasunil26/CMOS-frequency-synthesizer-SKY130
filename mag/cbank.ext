@@ -1,4 +1,4 @@
-timestamp 1640983325
+timestamp 1640991424
 version 8.3
 tech sky130A
 style ngspice()
@@ -26,18 +26,18 @@ node "a_3680_n30#" 133 1402.86 3680 -30 ndif 0 0 0 0 0 0 0 0 19600 560 0 0 0 0 0
 node "a_2730_n30#" 133 1402.86 2730 -30 ndif 0 0 0 0 0 0 0 0 19600 560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19600 560 19600 560 19600 560 642800 4060 0 0 0 0 0 0
 node "a_1720_n30#" 120 0 1720 -30 ndif 0 0 0 0 0 0 0 0 19600 560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "gnd!" 0 0 950 -1660 ppd 0 0 0 0 0 0 0 0 0 0 135200 2080 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 512800 9000 433800 7420 496800 8120 1964400 12740 2795480 19244 0 0 0 0
+cap "a_3680_n30#" "v" 1301.39
+cap "a_2730_n30#" "v" 1301.39
+cap "a_3680_n30#" "a_4660_n30#" 199.5
+cap "v" "li_1720_n30#" 1301.39
 cap "a_6660_n30#" "v" 1301.39
 cap "a_5640_n30#" "v" 1301.39
 cap "a_5640_n30#" "a_6660_n30#" 191.52
 cap "a_4660_n30#" "v" 1301.39
-cap "a_3680_n30#" "v" 1301.39
 cap "a_4660_n30#" "a_5640_n30#" 199.5
-cap "a_2730_n30#" "v" 1301.39
-cap "a_3680_n30#" "a_4660_n30#" 199.5
-cap "a_2730_n30#" "a_3680_n30#" 199.5
-cap "v" "li_1720_n30#" 1301.39
-cap "a_2730_n30#" "li_1720_n30#" 199.5
 cap "a_1720_n30#" "li_1720_n30#" 18.13
+cap "a_2730_n30#" "a_3680_n30#" 199.5
+cap "a_2730_n30#" "li_1720_n30#" 199.5
 device csubckt sky130_fd_pr__cap_mim_m3_1 6510 590 6511 591 w=560 l=560 "None" "v" 1920 0 "a_6660_n30#" 1440 0
 device csubckt sky130_fd_pr__cap_mim_m3_1 5510 590 5511 591 w=560 l=560 "None" "v" 1920 0 "a_5640_n30#" 1440 0
 device csubckt sky130_fd_pr__cap_mim_m3_1 4520 590 4521 591 w=560 l=560 "None" "v" 1920 0 "a_4660_n30#" 1440 0
@@ -49,16 +49,16 @@ cap "switch_1/vin" "switch_1/vout" -0.157143
 cap "switch_1/vcont" "switch_1/vin" -136.5
 cap "switch_0/vcont" "switch_0/vout" 4.23077
 cap "switch_0/vcont" "switch_0/vin" 83.635
-cap "switch_2/vout" "switch_2/vcont" 4.23077
-cap "switch_2/vin" "switch_2/vcont" 83.635
-cap "switch_1/vout" "switch_1/vcont" 4.23077
-cap "switch_1/vin" "switch_1/vcont" 83.635
+cap "switch_2/vcont" "switch_2/vout" 4.23077
+cap "switch_2/vcont" "switch_2/vin" 83.635
+cap "switch_1/vcont" "switch_1/vout" 4.23077
+cap "switch_1/vcont" "switch_1/vin" 83.635
 cap "switch_3/vcont" "switch_3/vout" 4.23077
 cap "switch_3/vcont" "switch_3/vin" 83.635
-cap "switch_4/vcont" "switch_4/vin" 83.635
 cap "switch_5/vcont" "switch_5/vout" 4.23077
 cap "switch_5/vcont" "switch_5/vin" 83.635
 cap "switch_4/vcont" "switch_4/vout" 4.23077
+cap "switch_4/vcont" "switch_4/vin" 83.635
 merge "switch_5/VSUBS" "switch_5/vout" -332.789 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -280 -1316 0 0 0 0 0 0 -21300 -442 0 0 0 0
 merge "switch_5/vout" "switch_4/VSUBS"
 merge "switch_4/VSUBS" "switch_4/vout"
