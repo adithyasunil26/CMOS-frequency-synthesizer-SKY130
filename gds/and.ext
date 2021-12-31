@@ -34,14 +34,14 @@ cap "B" "Z1" 67.1786
 cap "A" "gnd!" 57.75
 cap "B" "OUT" 8.8
 cap "vdd!" "Z1" 7.96552
-cap "out1" "Z1" 356.371
 cap "vdd!" "gnd!" 13.8886
-cap "out1" "gnd!" 226.769
 cap "vdd!" "OUT" 574.768
 cap "A" "B" 87.6201
-cap "out1" "OUT" 261.752
+cap "out1" "Z1" 356.371
 cap "vdd!" "B" 13.5882
+cap "out1" "gnd!" 226.769
 cap "vdd!" "A" 13.5882
+cap "out1" "OUT" 261.752
 cap "VDD" "OUT" 2.3125
 cap "out1" "B" 176.792
 cap "out1" "A" 13.5179
