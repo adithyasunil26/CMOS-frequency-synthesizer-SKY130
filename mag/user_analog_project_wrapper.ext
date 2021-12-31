@@ -1,4 +1,4 @@
-timestamp 1640907300
+timestamp 1640909904
 version 8.3
 tech sky130A
 style ngspice()
@@ -1386,47 +1386,47 @@ node "io_analog[1]" 82 91732 566594 702300 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "io_analog[3]" 132 195439 413394 702300 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 648900 5760 313500 2240 13544800 30700 427749500 261480 0 0 0 0 0 0
 node "io_analog[2]" 74 103560 465394 702300 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 708000 4820 422500 2600 43183600 62740 150550400 128060 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "io_clamp_high[2]" "io_analog[6]" 525
-cap "io_analog[4]" "io_analog[4]" 26250
-cap "io_clamp_low[2]" "io_clamp_high[2]" 525
-cap "io_analog[6]" "io_clamp_low[2]" 525
-cap "io_analog[4]" "io_analog[4]" 26250
-cap "io_analog[5]" "io_analog[5]" 26250
-cap "io_analog[5]" "io_analog[5]" 26250
-cap "io_analog[4]" "io_analog[4]" 21250
-cap "io_analog[1]" "io_analog[0]" 12301.4
-cap "io_analog[6]" "io_analog[6]" 26250
-cap "io_analog[4]" "io_analog[4]" 21250
-cap "io_analog[5]" "io_analog[5]" 21250
-cap "io_analog[6]" "io_analog[6]" 26250
+cap "io_analog[6]" "io_analog[6]" 21250
 cap "io_analog[0]" "vdda1" 18313.2
-cap "io_analog[1]" "vdda1" 23516.2
-cap "io_analog[5]" "io_analog[5]" 21250
-cap "io_analog[6]" "io_analog[6]" 21250
-cap "io_analog[3]" "vssa1" 6389.64
-cap "io_analog[6]" "io_analog[6]" 21250
-cap "io_analog[2]" "vdda1" 219.25
-cap "io_analog[2]" "vssa1" 9275.17
 cap "io_clamp_high[0]" "io_analog[4]" 525
 cap "io_clamp_low[0]" "io_clamp_high[0]" 525
 cap "io_analog[4]" "io_clamp_low[0]" 525
 cap "io_clamp_high[1]" "io_analog[5]" 525
 cap "io_clamp_low[1]" "io_clamp_high[1]" 525
 cap "io_analog[5]" "io_clamp_low[1]" 525
+cap "io_clamp_high[2]" "io_analog[6]" 525
+cap "io_analog[4]" "io_analog[4]" 26250
+cap "io_clamp_low[2]" "io_clamp_high[2]" 525
+cap "io_analog[6]" "io_clamp_low[2]" 525
+cap "io_analog[4]" "io_analog[4]" 26250
+cap "io_analog[1]" "vdda1" 23516.2
+cap "io_analog[5]" "io_analog[5]" 26250
+cap "io_analog[2]" "vdda1" 219.25
+cap "io_analog[3]" "vssa1" 6389.64
+cap "io_analog[0]" "io_analog[1]" 12301.4
+cap "io_analog[2]" "vssa1" 9275.17
+cap "io_analog[5]" "io_analog[5]" 26250
+cap "io_analog[4]" "io_analog[4]" 21250
+cap "io_analog[6]" "io_analog[6]" 26250
+cap "io_analog[4]" "io_analog[4]" 21250
+cap "io_analog[5]" "io_analog[5]" 21250
+cap "io_analog[6]" "io_analog[6]" 26250
+cap "io_analog[5]" "io_analog[5]" 21250
+cap "io_analog[6]" "io_analog[6]" 21250
 cap "cp_1/down" "cp_1/gnd!" 439.89
 cap "io_analog[1]" "cp_1/gnd!" -55.89
 cap "cp_1/vbias" "cp_1/gnd!" 6.79412
 cap "cp_1/vbias" "cp_1/gnd!" 8.73529
 cap "cp_1/vbias" "cp_1/gnd!" 6.79412
-cap "cp_1/a_10_n50#" "cp_1/vbias" 31.68
 cap "cp_1/vbias" "cp_1/gnd!" 8.73529
+cap "cp_1/a_10_n50#" "cp_1/vbias" 31.68
 cap "cp_1/vdd!" "cp_1/vdd!" 27.826
-cap "cp_1/vdd!" "cp_1/upbar" 41.9025
 cap "vdda1" "cp_1/vdd!" 1551.39
 cap "cp_1/vdd!" "cp_1/vdd!" -86.128
 cap "cp_1/upbar" "cp_1/vdd!" 47.412
 cap "cp_1/upbar" "vdda1" 158.709
 cap "cp_1/vdd!" "vdda1" 115.602
+cap "cp_1/vdd!" "cp_1/upbar" 41.9025
 cap "vdda1" "cp_1/vdd!" 907.12
 cap "cp_1/vdd!" "cp_1/vdd!" -53.44
 cap "cp_1/vdd!" "vdda1" 80.16
