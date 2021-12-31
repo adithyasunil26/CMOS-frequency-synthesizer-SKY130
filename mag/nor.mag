@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1640700690
+timestamp 1640957264
 << nwell >>
 rect -55 -15 245 610
 << nmos >>
@@ -213,10 +213,6 @@ rect 170 155 195 180
 rect 170 110 195 135
 rect 170 65 195 90
 rect 170 20 195 45
-<< psubdiff >>
-rect 230 -215 290 -155
-<< nsubdiff >>
-rect 95 540 145 590
 << poly >>
 rect 20 460 35 480
 rect 145 460 160 480
@@ -238,7 +234,6 @@ rect 145 -225 160 -210
 rect -10 -40 10 -20
 rect 115 -40 135 -20
 << locali >>
-rect 90 535 150 595
 rect 5 495 10 515
 rect -15 460 10 495
 rect -20 450 15 460
@@ -407,7 +402,6 @@ rect 165 -210 200 -200
 rect -15 -265 10 -210
 rect 5 -285 10 -265
 rect 110 -265 135 -210
-rect 230 -215 290 -155
 rect 130 -285 135 -265
 << viali >>
 rect -15 495 5 515
@@ -518,12 +512,12 @@ rect 140 -290 245 -260
 rect 140 -295 145 -290
 rect 95 -300 145 -295
 << labels >>
-rlabel locali 110 565 110 565 1 vdd!
-rlabel locali 265 -185 265 -185 1 gnd!
 rlabel metal4 -55 -290 245 -260 1 GND
 rlabel nwell -55 495 245 525 1 VDD
 rlabel locali 75 200 105 225 1 Z1
 rlabel locali 170 -90 245 -70 1 Out
 rlabel locali -55 -40 10 -20 1 A
 rlabel metal1 -55 -90 10 -75 1 B
+rlabel locali -6 467 -6 467 1 vdd!
+rlabel locali 118 -234 118 -234 1 gnd!
 << end >>

@@ -1,4 +1,4 @@
-timestamp 1640901950
+timestamp 1640956319
 version 8.3
 tech sky130A
 style ngspice()
@@ -21,53 +21,53 @@ substrate "a_7790_n10640#" 0 0 7790 -10640 ppd 0 0 0 0 0 0 0 0 0 0 1216800 18720
 cap "li_4080_1390#" "a5" 77.72
 cap "li_7140_1400#" "a5" 100.96
 cap "cbank_2/a0" "cbank_2/switch_0/vout" 46.5385
-cap "cbank_2/a2" "cbank_2/switch_2/vout" 46.5385
 cap "cbank_2/a1" "cbank_2/switch_1/vout" 46.5385
-cap "cbank_2/switch_3/vout" "cbank_2/a3" 46.5385
-cap "cbank_2/a4" "cbank_2/switch_4/vout" 46.5385
+cap "cbank_2/a2" "cbank_2/switch_2/vout" 46.5385
+cap "cbank_2/a3" "cbank_2/switch_3/vout" 46.5385
 cap "cbank_2/a5" "cbank_2/switch_5/vout" 12.6923
-cap "cbank_2/a5" "cbank_2/switch_5/vout" 33.8462
-cap "cbank_2/switch_5/vin" "li_7140_1400#" 24
+cap "cbank_2/a4" "cbank_2/switch_4/vout" 46.5385
+cap "li_7140_1400#" "cbank_2/switch_5/vin" 24
+cap "cbank_2/switch_5/vout" "cbank_2/a5" 33.8462
 cap "cbank_2/v" "cbank_1/gnd!" 86.7059
-cap "a0" "cbank_2/v" 53.41
 cap "cbank_1/switch_1/vin" "a0" 21.8167
-cap "cbank_2/v" "cbank_1/switch_0/vout" 275.882
-cap "a0" "cbank_1/switch_0/vout" 181.38
-cap "cbank_1/switch_2/vin" "a1" 23.6566
-cap "cbank_1/switch_1/vout" "a1" 209.96
+cap "cbank_1/switch_0/vout" "a0" 181.38
+cap "a0" "cbank_2/v" 53.41
+cap "cbank_1/switch_0/vout" "cbank_2/v" 275.882
 cap "a1" "cbank_2/v" 53.41
 cap "cbank_1/switch_1/vout" "cbank_2/v" 275.882
-cap "a2" "cbank_1/switch_1/vout" 60.0024
-cap "a3" "cbank_2/v" 53.41
-cap "a2" "cbank_2/v" 53.41
-cap "cbank_1/switch_4/vin" "a3" 11.4157
+cap "cbank_1/switch_2/vin" "a1" 23.6566
+cap "cbank_1/switch_1/vout" "a1" 209.96
+cap "cbank_1/switch_1/vout" "a2" 60.0024
 cap "cbank_1/gnd!" "cbank_2/v" 275.882
-cap "cbank_1/switch_3/vin" "a2" 23.515
 cap "cbank_1/gnd!" "a3" 192.323
 cap "cbank_1/gnd!" "a2" 124.302
+cap "cbank_1/switch_4/vin" "a3" 11.4157
+cap "a3" "cbank_2/v" 53.41
+cap "a2" "cbank_2/v" 53.41
+cap "cbank_1/switch_3/vin" "a2" 23.515
+cap "a3" "cbank_1/switch_4/vin" 11.4157
 cap "a4" "li_7140_1400#" 53.41
 cap "cbank_1/switch_4/vout" "li_7140_1400#" 275.882
 cap "cbank_1/switch_5/vin" "a4" 20.5602
 cap "cbank_1/switch_4/vout" "a4" 190.632
-cap "cbank_1/switch_4/vin" "a3" 11.4157
-cap "cbank_1/switch_5/vout" "a_7790_n10640#" 162.097
+cap "a_7790_n10640#" "cbank_1/switch_5/vout" 162.097
+cap "li_7140_1400#" "cbank_1/switch_5/vout" 233.936
+cap "a5" "cbank_1/switch_5/vout" 124.931
 cap "li_7140_1400#" "cbank_2/a_6660_n30#" 126
-cap "cbank_1/switch_5/vout" "li_7140_1400#" 233.936
-cap "cbank_1/switch_5/vout" "a5" 124.931
 cap "cbank_1/gnd!" "a_7790_n10640#" 45.6818
-cap "cbank_1/a0" "cbank_1/switch_1/vin" 106.517
-cap "cbank_1/a0" "cbank_1/switch_0/vout" 248.36
+cap "cbank_1/switch_1/vin" "cbank_1/a0" 106.517
+cap "cbank_1/switch_0/vout" "cbank_1/a0" 248.36
 cap "cbank_1/a2" "cbank_1/switch_1/vout" 149.619
 cap "cbank_1/a1" "cbank_1/switch_2/vin" 115.5
 cap "cbank_1/a1" "cbank_1/switch_1/vout" 289.235
+cap "cbank_1/a3" "cbank_1/gnd!" 264.413
+cap "cbank_1/a2" "cbank_1/gnd!" 103.081
 cap "cbank_1/a3" "cbank_1/switch_4/vin" 55.7355
 cap "cbank_1/a2" "cbank_1/switch_3/vin" 114.808
-cap "cbank_1/gnd!" "cbank_1/a3" 264.413
-cap "cbank_1/gnd!" "cbank_1/a2" 103.081
+cap "cbank_1/switch_5/vin" "cbank_1/a4" 100.382
+cap "cbank_1/switch_4/vout" "cbank_1/a4" 261.965
 cap "cbank_1/switch_4/vin" "a3" 55.7355
 cap "cbank_1/a5" "cbank_1/switch_4/vout" 12.6923
-cap "cbank_1/a4" "cbank_1/switch_5/vin" 100.382
-cap "cbank_1/a4" "cbank_1/switch_4/vout" 261.965
 cap "cbank_1/a5" "cbank_1/switch_5/vout" 143.406
 cap "cbank_1/v" "cbank_0/gnd!" 47.5484
 cap "cbank_0/gnd!" "cbank_1/v" 151.29
@@ -75,13 +75,13 @@ cap "cbank_1/a0" "cbank_1/v" 53.41
 cap "cbank_1/v" "cbank_1/a1" 53.41
 cap "cbank_0/gnd!" "cbank_1/v" 151.29
 cap "cbank_1/v" "cbank_1/a3" 53.41
-cap "cbank_1/v" "cbank_0/gnd!" 151.29
 cap "cbank_1/v" "cbank_1/a2" 53.41
+cap "cbank_1/v" "cbank_0/gnd!" 151.29
+cap "li_4080_1390#" "cbank_0/gnd!" 151.29
 cap "li_4080_1390#" "cbank_1/a4" 53.41
-cap "cbank_0/gnd!" "li_4080_1390#" 151.29
 cap "cbank_0/gnd!" "li_4080_1390#" 41.6979
-cap "cbank_1/switch_5/vin" "li_4080_1390#" 133.875
-cap "cbank_0/gnd!" "cbank_1/v" 47.5484
+cap "li_4080_1390#" "cbank_1/switch_5/vin" 133.875
+cap "cbank_1/v" "cbank_0/gnd!" 47.5484
 cap "cbank_0/switch_0/vout" "cbank_1/v" 151.29
 cap "cbank_0/switch_1/vin" "a0" 82.3167
 cap "cbank_0/switch_0/vout" "a0" 296.011
@@ -89,46 +89,51 @@ cap "cbank_0/switch_1/vout" "cbank_1/v" 151.29
 cap "cbank_0/switch_1/vout" "a2" 118.551
 cap "cbank_0/switch_2/vin" "a1" 89.259
 cap "cbank_0/switch_1/vout" "a1" 347.808
+cap "cbank_0/gnd!" "a2" 182.851
 cap "cbank_0/switch_4/vin" "a3" 43.0727
 cap "cbank_0/switch_3/vin" "a2" 88.7246
 cap "cbank_0/gnd!" "cbank_1/v" 151.29
 cap "cbank_0/gnd!" "a3" 316.073
-cap "cbank_0/gnd!" "a2" 182.851
-cap "cbank_0/switch_4/vout" "li_4080_1390#" 151.29
-cap "cbank_0/switch_5/vin" "a4" 77.5759
-cap "cbank_0/switch_4/vout" "a4" 312.991
 cap "cbank_0/switch_4/vin" "a3" 43.0727
-cap "cbank_0/switch_5/vout" "a_7790_n10640#" 193.269
+cap "cbank_0/switch_4/vout" "li_4080_1390#" 151.29
+cap "cbank_0/switch_4/vout" "a4" 312.991
+cap "cbank_0/switch_5/vin" "a4" 77.5759
+cap "a_7790_n10640#" "cbank_0/switch_5/vout" 193.269
 cap "cbank_0/switch_5/vout" "li_4080_1390#" 438.698
 cap "cbank_0/switch_5/vout" "li_7140_1400#" 142.26
 cap "cbank_0/switch_5/vout" "a5" 187.16
 cap "cbank_0/gnd!" "a_7790_n10640#" 45.6818
-cap "cbank_0/a0" "cbank_0/switch_1/vin" 46.0167
-cap "cbank_0/a0" "cbank_0/switch_0/vout" 133.728
+cap "cbank_0/switch_1/vin" "cbank_0/a0" 46.0167
+cap "cbank_0/switch_0/vout" "cbank_0/a0" 133.728
 cap "cbank_0/a2" "cbank_0/switch_2/vout" 91.0707
 cap "cbank_0/a1" "cbank_0/switch_2/vin" 49.8976
 cap "cbank_0/a1" "cbank_0/switch_1/vout" 151.387
-cap "cbank_0/a3" "cbank_0/switch_4/vin" 24.0785
-cap "cbank_0/a3" "cbank_0/switch_3/vout" 140.663
 cap "cbank_0/a2" "cbank_0/switch_3/vin" 49.5988
 cap "cbank_0/a2" "cbank_0/switch_2/vout" 44.5323
+cap "cbank_0/switch_4/vin" "cbank_0/a3" 24.0785
+cap "cbank_0/switch_3/vout" "cbank_0/a3" 140.663
+cap "cbank_0/switch_5/vout" "cbank_0/a5" 12.6923
+cap "cbank_0/switch_5/vin" "cbank_0/a4" 43.3665
+cap "cbank_0/switch_4/vout" "cbank_0/a4" 139.606
 cap "cbank_0/switch_4/vin" "a3" 24.0785
-cap "cbank_0/a5" "cbank_0/switch_5/vout" 12.6923
-cap "cbank_0/a4" "cbank_0/switch_5/vin" 43.3665
-cap "cbank_0/a4" "cbank_0/switch_4/vout" 139.606
 cap "cbank_0/a5" "cbank_0/switch_5/vout" 81.1776
-cap "ro_var_extend_0/gnd" "ro_var_extend_0/out1" 69.0462
-cap "ro_var_extend_0/out1" "ro_var_extend_0/out1" 120.023
-cap "ro_var_extend_0/out1" "ro_var_extend_0/out3" 116.667
-cap "ro_var_extend_0/w_n120_n750#" "ro_var_extend_0/out1" 100.15
+cap "cbank_0/v" "ro_var_extend_0/gnd" 151.9
+cap "ro_var_extend_0/gnd" "li_4080_1390#" 796.97
+cap "li_4080_1390#" "ro_var_extend_0/gnd" 769.58
+cap "li_4080_1390#" "ro_var_extend_0/w_n120_n750#" 415.935
+cap "li_7140_1400#" "ro_var_extend_0/w_n120_n750#" 294.59
+cap "ro_var_extend_0/out1" "ro_var_extend_0/gnd" 69.0462
 cap "ro_var_extend_0/gnd" "ro_var_extend_0/out1" 129.703
+cap "ro_var_extend_0/out1" "ro_var_extend_0/w_n120_n750#" 100.15
+cap "ro_var_extend_0/out1" "ro_var_extend_0/out3" 116.667
+cap "ro_var_extend_0/out1" "ro_var_extend_0/out1" 120.023
+cap "ro_var_extend_0/w_n120_n750#" "ro_var_extend_0/out2" 184.5
 cap "ro_var_extend_0/out2" "ro_var_extend_0/out3" 100
 cap "ro_var_extend_0/out2" "ro_var_extend_0/out2" 113.031
-cap "ro_var_extend_0/w_n120_n750#" "ro_var_extend_0/out2" 184.5
 cap "ro_var_extend_0/gnd" "ro_var_extend_0/out2" 259.55
-cap "ro_var_extend_0/w_n120_n750#" "ro_var_extend_0/vcont" 214.76
-cap "ro_var_extend_0/vcont" "ro_var_extend_0/w_n120_n750#" -11.167
-cap "ro_var_extend_0/out3" "ro_var_extend_0/gnd" 12.1846
+cap "ro_var_extend_0/vcont" "ro_var_extend_0/w_n120_n750#" 214.76
+cap "ro_var_extend_0/vcont" "ro_var_extend_0/gnd" -11.167
+cap "ro_var_extend_0/out3" "ro_var_extend_0/gnd" 392.251
 merge "cbank_0/a4" "cbank_1/a4" -1801.69 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -154480 -6032 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cbank_1/a4" "cbank_2/a4"
 merge "cbank_2/a4" "a4"
@@ -137,11 +142,11 @@ merge "cbank_0/v" "li_1010_1400#"
 merge "cbank_0/a5" "cbank_1/a5" -1833.47 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -192400 -6020 0 0 0 0 0 0 0 0 0 0 0 0
 merge "cbank_1/a5" "cbank_2/a5"
 merge "cbank_2/a5" "a5"
-merge "ro_var_extend_0/out3" "cbank_2/v" -4640.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14880 -132 0 0 -1324370 -18788 33000 -960 33000 -960 0 0 0 0
+merge "ro_var_extend_0/out3" "cbank_2/v" -4733.08 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14880 -132 0 0 -1007200 -18788 33000 -960 33000 -960 0 0 0 0
 merge "cbank_2/v" "li_7140_1400#"
-merge "ro_var_extend_0/out2" "cbank_1/v" -3894.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -480 -136 0 0 0 0 -666880 -17168 448800 -960 0 0 0 0
+merge "ro_var_extend_0/out2" "cbank_1/v" -3879.76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -480 -136 0 0 0 0 -616280 -17168 448800 -960 0 0 0 0
 merge "cbank_1/v" "li_4080_1390#"
-merge "ro_var_extend_0/w_n120_n750#" "ro_var_extend_0/gnd" -801.625 0 0 0 0 0 0 0 0 0 0 114560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 112240 0 183420 -1330 112240 0 112240 0 -36020 -4694 0 0 0 0
+merge "ro_var_extend_0/w_n120_n750#" "ro_var_extend_0/gnd" -1380.6 0 0 0 0 0 0 0 0 0 0 337340 -2080 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 314620 -1920 161380 -3848 142140 -2800 142140 -2800 -31640 -8574 0 0 0 0
 merge "ro_var_extend_0/gnd" "cbank_0/gnd!"
 merge "cbank_0/gnd!" "cbank_1/gnd!"
 merge "cbank_1/gnd!" "cbank_2/switch_5/vout"

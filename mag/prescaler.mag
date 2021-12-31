@@ -1,10 +1,17 @@
 magic
 tech sky130A
-timestamp 1640629925
+timestamp 1640957100
 << nwell >>
-rect 1005 760 1025 1060
-rect 245 260 255 685
-rect 995 260 1035 760
+rect 965 1061 1081 1192
+rect 965 1036 1082 1061
+rect 997 760 1073 1036
+rect 995 743 1073 760
+rect 201 527 277 721
+rect 195 459 277 527
+rect 195 271 271 459
+rect 195 265 353 271
+rect 208 260 353 265
+rect 995 260 1035 743
 << locali >>
 rect 225 1285 245 1310
 rect 990 1090 1010 1380
@@ -118,26 +125,26 @@ rect 195 -160 265 -155
 rect 195 -185 270 -160
 rect 985 -185 1055 -155
 rect 1750 -185 1890 -155
-use tspc  tspc_0
-timestamp 1640628874
-transform 1 0 325 0 1 295
-box -70 -565 690 465
-use tspc  tspc_1
-timestamp 1640628874
-transform 1 0 1105 0 1 295
-box -70 -565 690 465
-use tspc  tspc_2
-timestamp 1640628874
-transform -1 0 935 0 -1 1225
-box -70 -565 690 465
 use nand  nand_1
-timestamp 1640608660
+timestamp 1640957032
 transform -1 0 1325 0 -1 1050
-box -40 -310 300 290
+box -40 -310 300 315
 use nand  nand_0
-timestamp 1640608660
+timestamp 1640957032
 transform 1 0 -55 0 1 270
-box -40 -310 300 290
+box -40 -310 300 315
+use tspc  tspc_0
+timestamp 1640956963
+transform 1 0 325 0 1 295
+box -70 -490 690 465
+use tspc  tspc_1
+timestamp 1640956963
+transform 1 0 1105 0 1 295
+box -70 -490 690 465
+use tspc  tspc_2
+timestamp 1640956963
+transform -1 0 935 0 -1 1225
+box -70 -490 690 465
 << labels >>
 rlabel metal2 -210 740 170 755 1 mc1
 rlabel metal1 170 740 1430 755 1 mc1

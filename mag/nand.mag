@@ -1,8 +1,8 @@
 magic
 tech sky130A
-timestamp 1640608660
+timestamp 1640957032
 << nwell >>
-rect -40 -10 300 290
+rect -40 -10 280 315
 << nmos >>
 rect 30 -225 45 -125
 rect 155 -225 170 -125
@@ -117,10 +117,6 @@ rect 180 155 205 180
 rect 180 110 205 135
 rect 180 65 205 90
 rect 180 20 205 45
-<< psubdiff >>
-rect 245 -265 290 -220
-<< nsubdiff >>
-rect 250 90 280 120
 << poly >>
 rect 30 210 45 230
 rect 155 210 170 230
@@ -192,7 +188,6 @@ rect 205 110 210 135
 rect 175 90 210 110
 rect 175 65 180 90
 rect 205 65 210 90
-rect 245 85 285 125
 rect 175 45 210 65
 rect 175 20 180 45
 rect 205 20 210 45
@@ -236,7 +231,6 @@ rect 175 -215 180 -190
 rect 205 -215 210 -190
 rect 175 -225 210 -215
 rect -5 -275 20 -225
-rect 240 -270 295 -215
 rect 15 -295 20 -275
 << viali >>
 rect -5 250 15 270
@@ -318,15 +312,15 @@ rect -10 -300 20 -270
 rect 20 -300 25 -270
 rect -15 -305 25 -300
 << metal4 >>
-rect -40 280 275 290
-rect -40 260 -10 280
-rect -20 245 -10 260
-rect 25 260 115 280
-rect 25 245 30 260
+rect -40 280 280 315
+rect -40 255 -10 280
+rect -20 245 -10 255
+rect 25 255 115 280
+rect 25 245 30 255
 rect -20 235 30 245
-rect 105 245 115 260
-rect 150 260 275 280
-rect 150 245 155 260
+rect 105 245 115 255
+rect 150 255 280 280
+rect 150 245 155 255
 rect 105 235 155 245
 rect -20 -265 30 -260
 rect -20 -305 -15 -265
@@ -337,9 +331,9 @@ rect -20 -310 275 -305
 rlabel locali 60 -40 250 -15 1 OUT
 rlabel space 100 -105 170 -85 1 B
 rlabel locali -25 -105 45 -85 1 A
-rlabel locali 265 100 265 100 1 vdd!
-rlabel locali 265 -245 265 -245 1 gnd!
 rlabel nwell -40 260 275 290 1 VDD
 rlabel metal4 -20 -310 275 -280 1 GND
 rlabel locali 55 -170 145 -145 1 z1
+rlabel locali 130 222 130 222 1 vdd!
+rlabel locali 6 -251 6 -251 1 gnd!
 << end >>

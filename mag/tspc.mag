@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1640710665
+timestamp 1640956963
 << nwell >>
 rect -70 -35 670 465
 << nmos >>
@@ -418,10 +418,6 @@ rect 590 135 615 160
 rect 590 90 615 115
 rect 590 45 615 70
 rect 590 0 615 25
-<< psubdiff >>
-rect 270 -560 330 -505
-<< nsubdiff >>
-rect 110 360 160 405
 << poly >>
 rect 565 390 580 410
 rect 10 270 25 290
@@ -496,10 +492,9 @@ rect 365 -165 385 -145
 rect 490 -205 510 -185
 rect 115 -390 135 -370
 << locali >>
-rect -25 270 0 360
-rect 105 355 165 415
 rect 525 390 550 400
 rect 525 380 560 390
+rect -25 270 0 360
 rect 175 300 180 320
 rect 175 270 200 300
 rect 255 280 280 360
@@ -875,10 +870,9 @@ rect 570 -435 575 -415
 rect 595 -435 600 -415
 rect 445 -440 470 -435
 rect 570 -440 595 -435
-rect 270 -565 330 -505
 << viali >>
-rect -25 360 -5 380
 rect 525 400 545 420
+rect -25 360 -5 380
 rect 255 360 275 380
 rect 395 365 415 385
 rect 180 300 200 320
@@ -1187,7 +1181,7 @@ rect 560 -445 565 -405
 rect 605 -445 610 -405
 rect 560 -450 610 -445
 rect -70 -455 660 -450
-rect -60 -480 660 -455
+rect -60 -490 660 -455
 << labels >>
 rlabel locali -10 -255 10 -45 1 D
 rlabel locali -10 -65 40 -45 1 D
@@ -1203,6 +1197,6 @@ rlabel locali 5 -390 135 -370 1 Z2
 rlabel space 70 -160 95 -95 1 Z4
 rlabel space 285 -180 335 -160 1 Z4
 rlabel metal4 -55 -470 660 -455 1 GND
-rlabel locali 140 380 140 380 1 vdd!
-rlabel locali 300 -535 300 -535 1 gnd!
+rlabel locali 269 336 269 336 1 vdd!
+rlabel locali 202 -379 202 -379 1 gnd!
 << end >>
