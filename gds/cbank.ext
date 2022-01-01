@@ -53,20 +53,20 @@ device csubckt sky130_fd_pr__cap_mim_m3_1 3530 590 3531 591 w=560 l=560 "None" "
 device csubckt sky130_fd_pr__cap_mim_m3_1 2540 590 2541 591 w=560 l=560 "None" "v" 1856 0 "a_2730_n30#" 1440 0
 device csubckt sky130_fd_pr__cap_mim_m3_1 1550 590 1551 591 w=560 l=560 "None" "v" 1856 0 "li_1720_n30#" 1440 0
 device csubckt sky130_fd_pr__cap_mim_m3_1 70 130 71 131 w=1040 l=1000 "None" "v" 3616 0 "gnd!" 1440 0
-cap "a0" "switch_5/vout" 4.23077
-cap "a1" "switch_4/vin" -183.5
+cap "switch_5/vout" "a0" 4.23077
 cap "switch_5/vin" "a0" 83.635
 cap "switch_4/vin" "switch_4/vout" -0.157143
+cap "switch_4/vin" "a1" -183.5
 cap "a2" "switch_3/vout" 4.23077
 cap "a2" "switch_3/vin" 83.635
 cap "a1" "switch_4/vout" 4.23077
 cap "a1" "switch_4/vin" 83.635
-cap "a3" "switch_2/vout" 4.23077
-cap "a3" "switch_2/vin" 83.635
-cap "a5" "switch_0/vout" 4.23077
-cap "a5" "switch_0/vin" 83.635
-cap "a4" "switch_1/vout" 4.23077
-cap "a4" "switch_1/vin" 83.635
+cap "switch_2/vout" "a3" 4.23077
+cap "switch_2/vin" "a3" 83.635
+cap "switch_1/vout" "a4" 4.23077
+cap "switch_1/vin" "a4" 83.635
+cap "switch_0/vout" "a5" 4.23077
+cap "switch_0/vin" "a5" 83.635
 merge "switch_0/vout" "switch_0/w_n216_n26#" -343.969 -1102432 -12828 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -280 -1316 0 0 0 0 0 0 -29100 -494 0 0 0 0
 merge "switch_0/w_n216_n26#" "switch_2/vout"
 merge "switch_2/vout" "switch_2/w_n216_n26#"

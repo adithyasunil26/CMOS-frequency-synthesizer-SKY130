@@ -1,25 +1,24 @@
-timestamp 1640994530
+timestamp 1641018938
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
-use divbuf divbuf_0 1 0 920 0 1 7280
 use pd pd_0 1 0 11070 0 1 1710
+use divbuf divbuf_0 1 0 920 0 1 7280
 use divider divider_0 1 0 980 0 1 470
 node "m2_490_1310#" 0 93.94 490 1310 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8800 440 0 0 0 0 0 0 0 0
 node "m2_10820_2480#" 0 59.4825 10820 2480 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4900 280 0 0 0 0 0 0 0 0
-node "m2_1460_4020#" 0 338.102 1460 4020 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8100 360 12100 440 26900 900 0 0 0 0
 node "m1_14010_2110#" 1 103.535 14010 2110 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7900 480 0 0 0 0 0 0 0 0 0 0
 node "m1_14010_2380#" 1 99.24 14010 2380 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7600 460 0 0 0 0 0 0 0 0 0 0
 node "div" 43 6611.43 450 6250 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 280 6400 320 31400 1560 24400 880 1183700 31360 0 0 0 0
 node "bufin" 89 7168.69 520 7270 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3200 320 96000 4720 20000 800 906400 27480 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "m1_14010_2380#" "m1_14010_2110#" 32.4205
 cap "bufin" "div" 257.28
+cap "m1_14010_2380#" "m1_14010_2110#" 32.4205
 cap "divider_0/Out" "divider_0/li_7140_680#" 51.4286
-cap "divider_0/tspc_2/a_740_n680#" "divider_0/Out" 7.5
 cap "divider_0/a_n940_n20#" "divider_0/Out" 4.44089e-16
+cap "divider_0/tspc_2/a_740_n680#" "divider_0/Out" 7.5
 cap "divider_0/a_n940_n20#" "pd_0/DIV" 94.53
 cap "divider_0/a_n940_n20#" "divider_0/Out" 4.44089e-16
 cap "pd_0/VDD" "pd_0/DIV" -8.405
@@ -27,33 +26,29 @@ cap "divider_0/tspc_2/vdd!" "divider_0/Out" 17.7188
 cap "divider_0/a_n940_n20#" "pd_0/REF" 23.8
 cap "pd_0/VDD" "pd_0/REF" -4.1
 cap "pd_0/VDD" "pd_0/UP" 14.4
-cap "divider_0/mc2" "divider_0/prescaler_0/tspc_2/a_630_n680#" -1.13687e-13
 cap "divbuf_0/VDD" "div" 20.1
 cap "divbuf_0/VDD" "bufin" 57.2727
 cap "divbuf_0/GND" "div" 224.76
 cap "divbuf_0/GND" "bufin" 331.7
 cap "divbuf_0/VDD" "bufin" 213.545
 cap "divbuf_0/GND" "bufin" 434
+cap "divbuf_0/VDD" "bufin" 171.818
 cap "divbuf_0/GND" "bufin" 434
 cap "divbuf_0/VDD" "bufin" 171.818
-cap "bufin" "divbuf_0/VDD" 171.818
-cap "bufin" "divbuf_0/GND" 434
+cap "divbuf_0/GND" "bufin" 434
 cap "divbuf_0/VDD" "bufin" 213.545
 cap "divider_0/a_n940_n20#" "bufin" 434
 cap "divbuf_0/VDD" "bufin" 171.818
 cap "divbuf_0/GND" "bufin" 434
 cap "divbuf_0/VDD" "bufin" 160.364
 cap "divbuf_0/GND" "bufin" 800.84
-cap "divbuf_0/OUT" "divbuf_0/GND" 2.68778
 cap "divbuf_0/GND" "divbuf_0/IN" 115.8
 cap "divbuf_0/OUT" "divbuf_0/VDD" 536
+cap "divbuf_0/GND" "divbuf_0/OUT" 2.68778
 cap "divbuf_0/GND" "divbuf_0/IN" 0.423077
 merge "divbuf_0/GND" "pd_0/a_n420_n1430#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "pd_0/a_n420_n1430#" "divider_0/a_n940_n20#"
 merge "divider_0/a_n940_n20#" "VSUBS"
-merge "divider_0/prescaler_0/GND" "divider_0/prescaler_0/tspc_2/gnd!" -87.4975 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51300 -240 0 0 2400 -200 0 0 0 0
-merge "divider_0/prescaler_0/tspc_2/gnd!" "divider_0/mc2"
-merge "divider_0/mc2" "m2_1460_4020#"
 merge "divbuf_0/OUT" "pd_0/DIV" -5520.81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -100 0 0 9600 -100 0 0 -1068300 -28290 0 0 0 0
 merge "pd_0/DIV" "div"
 merge "pd_0/REF" "m2_10820_2480#" -11.43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74400 -160 0 0 0 0 0 0 0 0

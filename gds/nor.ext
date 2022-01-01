@@ -23,22 +23,22 @@ node "B" 2203 502.86 -110 -180 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "A" 2231 379.695 -110 -80 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48700 3040 0 0 9200 460 0 0 0 0 0 0 0 0 0 0 0 0
 node "VDD" 3542 2250 -110 990 nw 0 0 0 0 750000 3700 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "w_n66_n446#" 0 0 -66 -446 pw 123984 1488 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "Out" "gnd!" 453.75
-cap "Z1" "gnd!" 9.625
-cap "Z1" "Out" 779.396
-cap "vdd!" "gnd!" 9.625
-cap "B" "gnd!" 39.7045
-cap "vdd!" "Out" 99
-cap "A" "gnd!" 19.25
-cap "vdd!" "Z1" 749.833
-cap "B" "Out" 246.8
 cap "A" "Out" 8.8
-cap "B" "Z1" 57.75
 cap "VDD" "Out" 2.3125
 cap "A" "vdd!" 57.75
 cap "VDD" "Z1" 2.775
 cap "VDD" "vdd!" 16.2425
 cap "A" "B" 72.9302
+cap "A" "gnd!" 19.25
+cap "Z1" "Out" 779.396
+cap "vdd!" "Out" 99
+cap "vdd!" "Z1" 749.833
+cap "B" "Out" 246.8
+cap "B" "Z1" 57.75
+cap "Out" "gnd!" 453.75
+cap "Z1" "gnd!" 9.625
+cap "vdd!" "gnd!" 9.625
+cap "B" "gnd!" 39.7045
 device msubckt sky130_fd_pr__nfet_01v8 290 -420 291 -419 l=30 w=200 "w_n66_n446#" "B" 60 0 "gnd!" 200 0 "Out" 200 0
 device msubckt sky130_fd_pr__nfet_01v8 40 -420 41 -419 l=30 w=200 "w_n66_n446#" "A" 60 0 "gnd!" 200 0 "Out" 200 0
 device msubckt sky130_fd_pr__pfet_01v8 290 20 291 21 l=30 w=900 "VDD" "B" 60 0 "Z1" 900 0 "Out" 900 0
