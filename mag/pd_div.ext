@@ -14,22 +14,22 @@ node "m1_14010_2380#" 1 99.24 14010 2380 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "div" 43 6611.43 450 6250 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 280 6400 320 31400 1560 24400 880 1183700 31360 0 0 0 0
 node "bufin" 89 7168.69 520 7270 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3200 320 96000 4720 20000 800 906400 27480 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "bufin" "div" 257.28
 cap "m1_14010_2380#" "m1_14010_2110#" 32.4205
+cap "div" "bufin" 257.28
 cap "divider_0/Out" "divider_0/li_7140_680#" 51.4286
-cap "divider_0/a_n940_n20#" "divider_0/Out" 4.44089e-16
 cap "divider_0/tspc_2/a_740_n680#" "divider_0/Out" 7.5
-cap "divider_0/a_n940_n20#" "pd_0/DIV" 94.53
 cap "divider_0/a_n940_n20#" "divider_0/Out" 4.44089e-16
-cap "pd_0/VDD" "pd_0/DIV" -8.405
+cap "pd_0/DIV" "divider_0/a_n940_n20#" 94.53
+cap "divider_0/Out" "divider_0/a_n940_n20#" 4.44089e-16
+cap "pd_0/DIV" "pd_0/VDD" -8.405
 cap "divider_0/tspc_2/vdd!" "divider_0/Out" 17.7188
-cap "divider_0/a_n940_n20#" "pd_0/REF" 23.8
+cap "pd_0/REF" "divider_0/a_n940_n20#" 23.8
 cap "pd_0/VDD" "pd_0/REF" -4.1
 cap "pd_0/VDD" "pd_0/UP" 14.4
-cap "divbuf_0/VDD" "div" 20.1
-cap "divbuf_0/VDD" "bufin" 57.2727
 cap "divbuf_0/GND" "div" 224.76
 cap "divbuf_0/GND" "bufin" 331.7
+cap "divbuf_0/VDD" "div" 20.1
+cap "divbuf_0/VDD" "bufin" 57.2727
 cap "divbuf_0/VDD" "bufin" 213.545
 cap "divbuf_0/GND" "bufin" 434
 cap "divbuf_0/VDD" "bufin" 171.818
@@ -42,9 +42,9 @@ cap "divbuf_0/VDD" "bufin" 171.818
 cap "divbuf_0/GND" "bufin" 434
 cap "divbuf_0/VDD" "bufin" 160.364
 cap "divbuf_0/GND" "bufin" 800.84
-cap "divbuf_0/GND" "divbuf_0/IN" 115.8
-cap "divbuf_0/OUT" "divbuf_0/VDD" 536
 cap "divbuf_0/GND" "divbuf_0/OUT" 2.68778
+cap "divbuf_0/OUT" "divbuf_0/VDD" 536
+cap "divbuf_0/GND" "divbuf_0/IN" 115.8
 cap "divbuf_0/GND" "divbuf_0/IN" 0.423077
 merge "divbuf_0/GND" "pd_0/a_n420_n1430#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "pd_0/a_n420_n1430#" "divider_0/a_n940_n20#"
