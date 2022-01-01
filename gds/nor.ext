@@ -29,14 +29,14 @@ cap "Z1" "Out" 779.396
 cap "vdd!" "gnd!" 9.625
 cap "B" "gnd!" 39.7045
 cap "vdd!" "Out" 99
+cap "A" "gnd!" 19.25
 cap "vdd!" "Z1" 749.833
 cap "B" "Out" 246.8
-cap "B" "Z1" 57.75
-cap "A" "gnd!" 19.25
 cap "A" "Out" 8.8
+cap "B" "Z1" 57.75
 cap "VDD" "Out" 2.3125
-cap "A" "vdd!" 57.75
 cap "VDD" "Z1" 2.775
+cap "A" "vdd!" 57.75
 cap "VDD" "vdd!" 16.2425
 cap "A" "B" 72.9302
 device msubckt sky130_fd_pr__nfet_01v8 290 -420 291 -419 l=30 w=200 "w_n66_n446#" "B" 60 0 "gnd!" 200 0 "Out" 200 0

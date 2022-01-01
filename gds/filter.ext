@@ -21,13 +21,13 @@ node "a_4216_n4798#" 51429 0 4216 -4798 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_4216_n2998#" 382 1030.6 4216 -2998 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 120960 4016 151980 1600 0 0 0 0 0 0 0 0 0 0
 substrate "gnd" 0 0 4660 -21680 li 7113600 89280 0 0 0 0 0 0 0 0 4867200 74880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53899200 149720 172800 2880 172800 2880 263135300 79980 0 0 0 0 0 0
 equiv "gnd" "gnd!"
-cap "a_4216_n2998#" "v" 311.161
 cap "a_4216_n5230#" "v" 187.252
-device csubckt sky130_fd_pr__cap_mim_m3_1 -2460 -20940 -2459 -20939 w=6000 l=6000 "None" "a_4216_n5230#" 23616 0 "gnd" 3600 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 4470 -20840 4471 -20839 w=6000 l=6000 "None" "a_4216_n5230#" 23616 0 "gnd" 3600 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -2460 -14150 -2459 -14149 w=6000 l=6000 "None" "a_4216_n5230#" 23616 0 "gnd" 3600 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 4470 -13970 4471 -13969 w=6000 l=6000 "None" "a_4216_n5230#" 23616 0 "gnd" 3600 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 5290 -7130 5291 -7129 w=6000 l=6000 "None" "v" 23616 0 "gnd" 3600 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -2460 -7130 -2459 -7129 w=6000 l=6000 "None" "a_4216_n5230#" 23616 0 "gnd" 3600 0
+cap "a_4216_n2998#" "v" 311.161
+device csubckt sky130_fd_pr__cap_mim_m3_1 -2460 -20940 -2459 -20939 w=6000 l=6000 "None" "a_4216_n5230#" 23616 0 "gnd" 400 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 4470 -20840 4471 -20839 w=6000 l=6000 "None" "a_4216_n5230#" 23616 0 "gnd" 400 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -2460 -14150 -2459 -14149 w=6000 l=6000 "None" "a_4216_n5230#" 23616 0 "gnd" 400 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 4470 -13970 4471 -13969 w=6000 l=6000 "None" "a_4216_n5230#" 23616 0 "gnd" 400 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 5290 -7130 5291 -7129 w=6000 l=6000 "None" "v" 23616 0 "gnd" 400 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -2460 -7130 -2459 -7129 w=6000 l=6000 "None" "a_4216_n5230#" 23616 0 "gnd" 400 0
 device rsubckt sky130_fd_pr__res_xhigh_po 4534 -4798 4535 -4797 l=1800 w=70 "gnd" "a_4534_n4798#" 0 0 "v" 70 0 "a_4216_n2998#" 70 0
 device rsubckt sky130_fd_pr__res_xhigh_po 4216 -4798 4217 -4797 l=1800 w=70 "gnd" "a_4216_n4798#" 0 0 "a_4216_n5230#" 70 0 "a_4216_n2998#" 70 0

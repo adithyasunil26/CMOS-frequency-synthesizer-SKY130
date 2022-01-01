@@ -1,0 +1,75 @@
+timestamp 0
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use divider divider_0 1 0 10370 0 1 470
+use ro_complete ro_complete_0 1 0 114 0 1 10660
+use divbuf divbuf_0 1 0 10310 0 1 7310
+node "m2_10860_4020#" 0 338.462 10860 4020 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8100 360 12100 440 28700 900 0 0 0 0
+node "m2_8110_11970#" 24 5612.14 8110 11970 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 856800 25600 0 0 0 0 0 0 0 0
+node "li_9870_6260#" 12 93.92 9870 6260 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_9880_7300#" 88 7321.44 9880 7300 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5700 440 14500 680 22100 840 1188700 27900 145200 4520 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "ro_complete_0/w_7764_n10666#" "divider_0/clk" 185.31
+cap "divider_0/Out" "divider_0/li_7140_680#" 67.5
+cap "divider_0/tspc_2/a_740_n680#" "divider_0/Out" 7.75862
+cap "divider_0/tspc_2/w_n146_n706#" "divider_0/Out" 1.77636e-15
+cap "ro_complete_0/w_7764_n10666#" "divider_0/clk" 91.5033
+cap "divider_0/tspc_2/vdd!" "divider_0/Out" 18.9
+cap "ro_complete_0/w_7764_n10666#" "m2_8110_11970#" 91.5033
+cap "ro_complete_0/w_7764_n10666#" "li_9880_7300#" 68.53
+cap "ro_complete_0/w_7764_n10666#" "m2_8110_11970#" 84.3137
+cap "divbuf_0/VDD" "li_9880_7300#" 96.9231
+cap "divbuf_0/GND" "li_9880_7300#" 467.175
+cap "divbuf_0/VDD" "li_9880_7300#" 173.923
+cap "divbuf_0/GND" "li_9880_7300#" 392.39
+cap "divbuf_0/VDD" "li_9880_7300#" 145.385
+cap "divbuf_0/GND" "li_9880_7300#" 392.39
+cap "divbuf_0/GND" "divider_0/w_n966_n46#" 124.865
+cap "divbuf_0/VDD" "li_9880_7300#" 145.385
+cap "divider_0/w_n966_n46#" "li_9880_7300#" 427.24
+cap "divider_0/w_n966_n46#" "divider_0/w_n966_n46#" 124.865
+cap "divbuf_0/VDD" "li_9880_7300#" 173.923
+cap "divbuf_0/GND" "li_9880_7300#" 328.635
+cap "divbuf_0/GND" "divider_0/w_n966_n46#" 124.865
+cap "divbuf_0/GND" "divider_0/w_n966_n46#" 124.865
+cap "divbuf_0/VDD" "li_9880_7300#" 126
+cap "divbuf_0/GND" "li_9880_7300#" 392.39
+cap "divider_0/w_n966_n46#" "li_9880_7300#" 621.43
+cap "divbuf_0/VDD" "li_9880_7300#" 111.462
+cap "ro_complete_0/w_7764_n10666#" "m2_8110_11970#" 142.068
+cap "ro_complete_0/w_7764_n10666#" "li_9880_7300#" 159.56
+cap "ro_complete_0/w_7764_n10666#" "divbuf_0/OUT" 4.06154
+cap "li_9880_7300#" "divbuf_0/VDD" 212.268
+cap "divbuf_0/GND" "divbuf_0/IN" -282.239
+cap "divbuf_0/IN" "divbuf_0/VDD" 259.283
+cap "divbuf_0/GND" "divbuf_0/OUT" 4.06154
+cap "divbuf_0/VDD" "li_9880_7300#" 47.0149
+cap "divbuf_0/VDD" "li_9880_7300#" 70.5224
+cap "divbuf_0/VDD" "li_9880_7300#" 70.5224
+cap "divbuf_0/VDD" "li_9880_7300#" 47.0149
+cap "divbuf_0/VDD" "li_9880_7300#" 61.1194
+cap "divbuf_0/VDD" "li_9880_7300#" 54.0672
+cap "li_9880_7300#" "divbuf_0/VDD" 49.0318
+cap "ro_complete_0/w_7764_n10666#" "m2_8110_11970#" 78.4314
+cap "ro_complete_0/w_7764_n10666#" "li_9880_7300#" 0.604396
+cap "divbuf_0/IN" "divbuf_0/VDD" 174.505
+cap "divbuf_0/GND" "divbuf_0/IN" 10.7657
+cap "ro_complete_0/w_7764_n10666#" "m2_8110_11970#" 78.4314
+cap "ro_complete_0/ro_var_extend_0/gnd" "m2_8110_11970#" 78.4314
+cap "ro_complete_0/ro_var_extend_0/gnd" "m2_8110_11970#" -42.222
+cap "ro_complete_0/w_7764_n10666#" "m2_8110_11970#" 95.9212
+cap "ro_complete_0/ro_var_extend_0/gnd" "m2_8110_11970#" -125.196
+merge "divbuf_0/OUT" "li_9870_6260#" -28.93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4400 -120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "divbuf_0/GND" "divider_0/w_n966_n46#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "divider_0/w_n966_n46#" "ro_complete_0/w_7764_n10666#"
+merge "ro_complete_0/w_7764_n10666#" "VSUBS"
+merge "ro_complete_0/li_7140_1400#" "divider_0/clk" -4926.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -251808 -23974 0 0 0 0 0 0 0 0
+merge "divider_0/clk" "m2_8110_11970#"
+merge "divider_0/prescaler_0/GND" "divider_0/prescaler_0/tspc_0/gnd!" -50.4227 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 125622 -240 0 0 11340 -180 0 0 0 0
+merge "divider_0/prescaler_0/tspc_0/gnd!" "divider_0/mc2"
+merge "divider_0/mc2" "m2_10860_4020#"
+merge "divbuf_0/IN" "divider_0/Out" -5289.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -38440 -340 0 0 0 0 122156 -24252 -14744 -642 0 0 0 0
+merge "divider_0/Out" "li_9880_7300#"

@@ -32,10 +32,10 @@ cap "A" "z1" 8.25
 cap "vdd!" "OUT" 838.2
 cap "A" "gnd!" 57.75
 cap "a_280_n230#" "OUT" 150.608
-cap "a_280_n230#" "vdd!" 13.0842
 cap "A" "OUT" 9.74286
-cap "A" "vdd!" 13.0842
 cap "VDD" "OUT" 2.96
+cap "a_280_n230#" "vdd!" 13.0842
+cap "A" "vdd!" 13.0842
 cap "VDD" "vdd!" 29.2
 cap "A" "a_280_n230#" 81.6947
 device msubckt sky130_fd_pr__nfet_01v8 310 -450 311 -449 l=30 w=200 "w_n46_n476#" "a_280_n230#" 60 0 "z1" 200 0 "OUT" 200 0
