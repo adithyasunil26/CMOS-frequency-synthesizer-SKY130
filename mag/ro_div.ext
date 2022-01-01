@@ -1,4 +1,4 @@
-timestamp 1641009187
+timestamp 1640997741
 version 8.3
 tech sky130A
 style ngspice()
@@ -22,24 +22,24 @@ cap "ro_complete_0/a_7790_n10640#" "li_9880_7300#" 68.53
 cap "ro_complete_0/a_7790_n10640#" "m2_8110_11970#" 83.3333
 cap "divbuf_0/VDD" "li_9880_7300#" 96.9231
 cap "divbuf_0/GND" "li_9880_7300#" 467.175
-cap "divbuf_0/GND" "li_9880_7300#" 392.39
 cap "divbuf_0/VDD" "li_9880_7300#" 173.923
-cap "divbuf_0/VDD" "li_9880_7300#" 145.385
-cap "divbuf_0/GND" "divider_0/a_n940_n20#" 124.865
 cap "divbuf_0/GND" "li_9880_7300#" 392.39
 cap "divbuf_0/VDD" "li_9880_7300#" 145.385
+cap "divbuf_0/GND" "li_9880_7300#" 392.39
 cap "divbuf_0/GND" "divider_0/a_n940_n20#" 124.865
+cap "divbuf_0/VDD" "li_9880_7300#" 145.385
 cap "divbuf_0/GND" "li_9880_7300#" 427.24
-cap "divbuf_0/VDD" "li_9880_7300#" 173.923
 cap "divbuf_0/GND" "divider_0/a_n940_n20#" 124.865
+cap "divbuf_0/VDD" "li_9880_7300#" 173.923
 cap "divbuf_0/GND" "li_9880_7300#" 328.635
+cap "divbuf_0/GND" "divider_0/a_n940_n20#" 124.865
 cap "divbuf_0/VDD" "li_9880_7300#" 126
 cap "divbuf_0/GND" "divider_0/a_n940_n20#" 124.865
 cap "divbuf_0/GND" "li_9880_7300#" 392.39
 cap "divbuf_0/VDD" "li_9880_7300#" 111.462
 cap "divider_0/a_n940_n20#" "li_9880_7300#" 621.43
-cap "li_9880_7300#" "divbuf_0/VDD" 213.182
-cap "ro_complete_0/a_7790_n10640#" "m2_8110_11970#" 142.068
+cap "divbuf_0/VDD" "li_9880_7300#" 213.182
+cap "m2_8110_11970#" "ro_complete_0/a_7790_n10640#" 142.068
 cap "ro_complete_0/a_7790_n10640#" "divbuf_0/OUT" 4.06154
 cap "ro_complete_0/a_7790_n10640#" "li_9880_7300#" 159.56
 cap "divbuf_0/IN" "divbuf_0/VDD" 213.182

@@ -1,4 +1,4 @@
-timestamp 1641009187
+timestamp 1641001381
 version 8.3
 tech sky130A
 style ngspice()
@@ -6,11 +6,11 @@ scale 1000 1 500000
 resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
 use divbuf divbuf_1 1 0 -9540 0 1 24680
 use divbuf divbuf_0 1 0 -9910 0 1 -3210
+use filter filter_0 1 0 3600 0 1 20900
 use ro_complete ro_complete_0 1 0 16274 0 1 16950
 use pd pd_0 1 0 -9690 0 1 10360
 use divider divider_0 1 0 -9820 0 1 3970
 use cp cp_0 1 0 -9790 0 1 15680
-use filter filter_0 1 0 3600 0 1 20900
 node "m2_n9350_7520#" 0 334.53 -9350 7520 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10000 400 10000 400 27400 880 0 0 0 0
 node "m2_n10320_4830#" 0 17643.9 -10320 4830 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2955800 79940 0 0 0 0 0 0 0 0
 node "m1_8030_18490#" 5 5719.26 8030 18490 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2346100 20460 0 0 0 0 0 0 0 0 0 0
@@ -22,24 +22,24 @@ node "li_n9610_15490#" 20 3228.02 -9610 15490 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_n9940_24670#" 49 6702.41 -9940 24670 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 6400 320 796300 30500 0 0 0 0 0 0 0 0
 node "vdd!" 39004 5049.65 -6580 15170 nw 0 0 0 0 1032200 10140 0 0 78300 1120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 67500 1040 67500 1040 67500 1040 268400 2100 869400 9380 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "li_n10340_n3220#" "li_n10470_n4240#" 5259.52
-cap "li_n9610_15490#" "li_n9610_14790#" 2047.76
 cap "li_n10470_n4240#" "m2_n10320_4830#" 2256.25
 cap "m1_n1190_15020#" "m1_8030_18490#" 1125
+cap "li_n10340_n3220#" "li_n10470_n4240#" 5259.52
+cap "li_n9610_15490#" "li_n9610_14790#" 2047.76
 cap "divbuf_0/GND" "divbuf_0/OUT" 11.4231
 cap "divbuf_0/GND" "divbuf_0/OUT" 233.133
 cap "divbuf_0/GND" "divbuf_0/IN" 1.20879
 cap "divbuf_0/GND" "li_n10340_n3220#" 264.56
 cap "divbuf_0/GND" "li_n10470_n4240#" 230.7
-cap "divider_0/prescaler_0/GND" "li_n10340_n3220#" 12.5
 cap "divider_0/a_n940_n20#" "li_n10340_n3220#" 188.98
 cap "divider_0/a_n940_n20#" "li_n10470_n4240#" 478.84
+cap "divider_0/prescaler_0/GND" "li_n10340_n3220#" 12.5
 cap "divider_0/prescaler_0/GND" "li_n10340_n3220#" 555.844
 cap "divider_0/prescaler_0/tspc_1/GND" "li_n10340_n3220#" 607.422
 cap "divider_0/gnd" "li_n10340_n3220#" 494.311
 cap "divider_0/gnd" "li_n10340_n3220#" 567.289
 cap "divider_0/tspc_2/gnd!" "li_n10340_n3220#" 617.289
-cap "divider_0/Out" "divider_0/tspc_2/GND" 564.575
+cap "divider_0/tspc_2/GND" "divider_0/Out" 564.575
 cap "divider_0/tspc_2/gnd!" "divider_0/Out" 6.66667
 cap "divider_0/prescaler_0/nand_0/a_280_n230#" "li_n10470_n4240#" 34.4289
 cap "divider_0/prescaler_0/nand_0/VDD" "divider_0/clk" 10.8108
@@ -54,11 +54,11 @@ cap "divider_0/prescaler_0/mc1" "li_n10470_n4240#" 7.14286
 cap "divider_0/a_n940_n20#" "li_n10470_n4240#" 582.5
 cap "divider_0/mc2" "m2_n10320_4830#" 16.6667
 cap "divider_0/mc2" "li_n10470_n4240#" 7.14286
-cap "divider_0/a_n940_n20#" "m2_n10320_4830#" 178.12
-cap "divider_0/a_n940_n20#" "li_n10470_n4240#" 527.98
+cap "m2_n10320_4830#" "divider_0/a_n940_n20#" 178.12
+cap "li_n10470_n4240#" "divider_0/a_n940_n20#" 527.98
 cap "divider_0/prescaler_0/tspc_2/Z2" "divider_0/mc2" -7.10543e-15
 cap "divider_0/mc2" "divider_0/prescaler_0/tspc_2/a_630_n680#" -1.13687e-13
-cap "m2_n10320_4830#" "divider_0/a_n940_n20#" 164.005
+cap "divider_0/a_n940_n20#" "m2_n10320_4830#" 164.005
 cap "m2_n10320_4830#" "filter_0/a_4216_n5230#" 146.12
 cap "m2_n10320_4830#" "filter_0/gnd" 455.565
 cap "filter_0/gnd" "m2_n10320_4830#" 59.045
@@ -94,15 +94,15 @@ cap "ro_complete_0/cbank_2/a1" "m2_n10320_4830#" 52.255
 cap "ro_complete_0/cbank_2/switch_3/vin" "m2_n10320_4830#" 155.808
 cap "ro_complete_0/cbank_2/switch_2/vin" "m2_n10320_4830#" -68.2034
 cap "ro_complete_0/cbank_2/a2" "m2_n10320_4830#" 52.255
+cap "ro_complete_0/cbank_2/switch_4/vin" "m2_n10320_4830#" 155.808
 cap "ro_complete_0/cbank_2/a4" "m2_n10320_4830#" 52.255
 cap "ro_complete_0/cbank_2/a3" "m2_n10320_4830#" 52.255
-cap "ro_complete_0/cbank_2/switch_4/vin" "m2_n10320_4830#" 155.808
 cap "ro_complete_0/cbank_2/switch_5/vin" "m2_n10320_4830#" 155.808
 cap "ro_complete_0/cbank_2/a5" "m2_n10320_4830#" 52.255
 cap "m2_n10320_4830#" "ro_complete_0/a_7790_n10640#" 21.5736
 cap "divider_0/a_n940_n20#" "divider_0/a_n940_n20#" 29.9605
 cap "divider_0/a_n940_n20#" "pd_0/DIV" 98.44
-cap "pd_0/a_n420_n1430#" "divider_0/a_n940_n20#" 60.7895
+cap "divider_0/a_n940_n20#" "pd_0/a_n420_n1430#" 60.7895
 cap "pd_0/a_n420_n1430#" "divider_0/a_n940_n20#" 42.1184
 cap "filter_0/gnd" "ro_complete_0/cbank_2/v" 44
 cap "ro_complete_0/li_7140_1400#" "ro_complete_0/cbank_1/gnd!" 6.9
@@ -113,24 +113,24 @@ cap "pd_0/UP" "pd_0/R" 5
 cap "pd_0/UP" "pd_0/DOWN" -6.03961e-14
 cap "pd_0/VDD" "pd_0/DOWN" 57.75
 cap "pd_0/VDD" "pd_0/UP" 60.4233
-cap "pd_0/R" "pd_0/UP" 2.08333
 cap "pd_0/VDD" "pd_0/DOWN" 57.75
+cap "pd_0/R" "pd_0/UP" 2.08333
 cap "pd_0/VDD" "pd_0/UP" 55.7133
 cap "m2_n10320_4830#" "ro_complete_0/cbank_1/gnd!" -55.2
 cap "cp_0/gnd!" "pd_0/REF" 263.6
-cap "pd_0/a_n420_n1430#" "cp_0/gnd!" 23.4474
 cap "pd_0/tspc_r_0/D" "li_n9610_14790#" 8.57143
-cap "cp_0/vbias" "li_n9610_15490#" 21.87
 cap "cp_0/gnd!" "li_n9610_15490#" 452.66
+cap "cp_0/vbias" "li_n9610_15490#" 21.87
 cap "cp_0/vbias" "li_n9610_14790#" 23.51
 cap "cp_0/gnd!" "li_n9610_14790#" 233.6
+cap "cp_0/gnd!" "pd_0/a_n420_n1430#" 23.4474
 cap "pd_0/tspc_r_0/VDD" "li_n9610_14790#" 42.8571
 cap "pd_0/a_n420_n1430#" "li_n9610_15490#" 121.5
 cap "pd_0/a_n420_n1430#" "li_n9610_14790#" 61.3636
-cap "pd_0/a_n420_n1430#" "li_n9610_15490#" 121.5
-cap "pd_0/a_n420_n1430#" "pd_0/UP" 61.3636
 cap "pd_0/VDD" "li_n9610_15490#" 13.7635
 cap "pd_0/VDD" "pd_0/UP" 25.2091
+cap "pd_0/a_n420_n1430#" "li_n9610_15490#" 121.5
+cap "pd_0/a_n420_n1430#" "pd_0/UP" 61.3636
 cap "pd_0/VDD" "li_n9610_15490#" 13.7635
 cap "pd_0/VDD" "pd_0/UP" 19.4734
 cap "pd_0/a_n420_n1430#" "li_n9610_15490#" 95.1
@@ -145,9 +145,9 @@ cap "cp_0/a_1710_n2840#" "cp_0/a_1710_0#" 36.4865
 cap "cp_0/a_1710_n2840#" "cp_0/a_3060_0#" 2.75
 cap "filter_0/gnd" "cp_0/out" 360.38
 cap "filter_0/gnd" "m1_n1190_15020#" 245.2
+cap "li_n9940_24670#" "cp_0/vdd!" 25.84
 cap "cp_0/a_10_n50#" "li_n9940_24670#" 446
 cap "cp_0/vdd!" "li_n9940_24670#" 335.97
-cap "cp_0/vdd!" "li_n9940_24670#" 25.84
 cap "cp_0/a_1710_n2840#" "cp_0/a_3060_0#" 256.01
 cap "filter_0/gnd" "ro_complete_0/cbank_0/v" 44
 cap "cp_0/a_10_n50#" "li_n9940_24670#" 624.4
@@ -161,30 +161,30 @@ cap "cp_0/vdd!" "li_n9940_24670#" 23.37
 cap "cp_0/vdd!" "cp_0/vdd!" -4.08
 cap "cp_0/a_3060_0#" "vdd!" 162.54
 cap "vdd!" "vdd!" -12.18
-cap "m1_n1190_15020#" "filter_0/a_4216_n5230#" 152.61
-cap "m1_n1190_15020#" "filter_0/gnd" 443.812
+cap "filter_0/a_4216_n5230#" "m1_n1190_15020#" 152.61
+cap "filter_0/gnd" "m1_n1190_15020#" 443.812
 cap "m1_n1190_15020#" "filter_0/a_4216_n5230#" 105.705
 cap "m1_n1190_15020#" "filter_0/gnd" 544.34
+cap "filter_0/a_4216_n5230#" "m1_n1190_15020#" 105.705
+cap "filter_0/gnd" "m1_n1190_15020#" 544.34
 cap "m1_n1190_15020#" "filter_0/a_4216_n5230#" 105.705
 cap "m1_n1190_15020#" "filter_0/gnd" 544.34
-cap "m1_n1190_15020#" "filter_0/a_4216_n5230#" 105.705
-cap "m1_n1190_15020#" "filter_0/gnd" 544.34
-cap "m1_n1190_15020#" "filter_0/a_4216_n5230#" 120.715
-cap "m1_n1190_15020#" "filter_0/gnd" 532.527
+cap "filter_0/a_4216_n5230#" "m1_n1190_15020#" 120.715
+cap "filter_0/gnd" "m1_n1190_15020#" 532.527
 cap "filter_0/v" "filter_0/gnd" 171.387
 cap "filter_0/a_4216_n2998#" "filter_0/v" 26.0033
 cap "filter_0/v" "filter_0/v" 252.31
 cap "filter_0/v" "filter_0/gnd" 572.365
+cap "filter_0/v" "m1_8030_18490#" 105.705
+cap "filter_0/gnd" "m1_8030_18490#" 519.84
 cap "m1_8030_18490#" "filter_0/v" 105.705
 cap "m1_8030_18490#" "filter_0/gnd" 519.84
-cap "m1_8030_18490#" "filter_0/v" 105.705
-cap "m1_8030_18490#" "filter_0/gnd" 519.84
-cap "m1_8030_18490#" "filter_0/v" 105.705
-cap "m1_8030_18490#" "filter_0/gnd" 519.84
-cap "m1_8030_18490#" "filter_0/v" 12.415
+cap "filter_0/v" "m1_8030_18490#" 105.705
+cap "filter_0/gnd" "m1_8030_18490#" 519.84
+cap "filter_0/v" "m1_8030_18490#" 12.415
 cap "m1_8030_18490#" "filter_0/gnd" 187.815
 cap "filter_0/gnd" "m1_8030_18490#" 523.525
-cap "filter_0/gnd" "m1_8030_18490#" 259.055
+cap "m1_8030_18490#" "filter_0/gnd" 259.055
 cap "divbuf_1/GND" "li_n9940_24670#" 63.47
 cap "divbuf_1/GND" "li_n9940_24670#" 261.09
 cap "divbuf_1/GND" "divbuf_1/IN" 183.463
