@@ -4,13 +4,13 @@ tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
-use tspc tspc_0 1 0 4120 0 1 990
-use tspc tspc_1 1 0 5700 0 1 990
-use tspc tspc_2 1 0 7280 0 1 990
-use prescaler prescaler_0 1 0 50 0 1 400
 use nor nor_0 -1 0 6630 0 -1 3210
 use nor nor_1 -1 0 5660 0 -1 3210
 use and and_0 -1 0 4660 0 -1 2930
+use prescaler prescaler_0 1 0 50 0 1 400
+use tspc tspc_0 1 0 4120 0 1 990
+use tspc tspc_1 1 0 5700 0 1 990
+use tspc tspc_2 1 0 7280 0 1 990
 port "gnd" 1 5430 30 5620 90 m4
 port "gnd" 1 3830 30 4010 90 m4
 port "vdd" 2 5450 1860 5630 1920 m4
@@ -51,90 +51,83 @@ node "mc2" 155 3424.46 -370 3580 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "w_n140_1520#" 3438 3270.42 -140 1520 nw 0 0 0 0 1008000 4240 0 0 122500 1400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 67080 1036 67080 1036 67080 1036 67080 1036 168928 2064 0 0 0 0
 node "w_2780_1920#" 31943 20273.1 2780 1920 nw 0 0 0 0 6485992 23000 0 0 245000 2800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134160 2072 134160 2072 134160 2072 134160 2072 610588 4880 0 0 0 0
 substrate "w_n966_n46#" 0 0 -966 -46 pw 2535060 32560 0 0 0 0 0 0 0 0 1757600 27040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9826000 57800 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_6130_3350#" "li_5740_3250#" 68.1032
+cap "w_2780_1920#" "li_3310_1810#" 24.0375
+cap "mc2" "li_5740_3250#" 22.679
+cap "w_2780_1920#" "li_5740_3250#" 72.945
+cap "w_2780_1920#" "li_6130_3350#" 7.215
+cap "w_2780_1920#" "li_2870_2670#" 76.8485
+cap "vdd" "vdd" 33.5
+cap "vdd" "vdd" 51.2353
+cap "vdd" "vdd" 20.1
 cap "li_5560_680#" "m4_7020_30#" 24.425
-cap "li_3980_680#" "li_5560_680#" 782.5
-cap "Out" "li_7140_680#" 23.5
 cap "li_3980_680#" "gnd" 24.425
 cap "li_3980_680#" "gnd" 27.1625
-cap "m1_5770_3360#" "w_2780_1920#" 53.84
-cap "li_5740_3250#" "li_5460_820#" 128.305
-cap "vdd" "vdd" 33.5
-cap "m4_7030_1860#" "w_2780_1920#" 40.0711
-cap "vdd" "vdd" 51.2353
-cap "vdd" "w_2780_1920#" 0.84
-cap "vdd" "vdd" 20.1
-cap "vdd" "w_2780_1920#" 9.82
-cap "li_6130_3350#" "li_5740_3250#" 68.1032
-cap "vdd" "w_2780_1920#" 4.08
-cap "vdd" "w_2780_1920#" 8.88
-cap "mc2" "li_5740_3250#" 22.679
-cap "m1_5770_3360#" "li_7040_820#" 90
-cap "li_5560_680#" "li_7040_820#" 15
-cap "m1_5770_3360#" "li_5740_3250#" 286.375
-cap "gnd" "mc2" 27.9
-cap "li_3980_680#" "li_5460_820#" 20
-cap "m1_5770_3360#" "li_6130_3350#" 136.842
-cap "li_5560_680#" "li_5740_3250#" 21.9534
-cap "li_3980_680#" "li_5740_3250#" 22.5
-cap "m1_5770_3360#" "mc2" 35.7143
-cap "li_7140_680#" "mc2" 61.52
 cap "li_5740_3250#" "vdd" 27.9
 cap "li_3310_1810#" "vdd" 35.39
 cap "li_5740_3250#" "vdd" 27.9
-cap "li_3310_1810#" "w_2780_1920#" 24.0375
-cap "li_5740_3250#" "w_2780_1920#" 72.945
-cap "li_6130_3350#" "w_2780_1920#" 7.215
-cap "li_2870_2670#" "w_2780_1920#" 76.8485
 cap "li_7140_680#" "m1_5770_3360#" 19.2857
 cap "li_5560_680#" "m1_5770_3360#" 16.875
+cap "w_2780_1920#" "m4_7030_1860#" 40.0711
 cap "li_5560_680#" "li_7140_680#" 437.5
-cap "w_n966_n46#" "prescaler_0/nand_1/A" 17.3684
-cap "prescaler_0/nand_1/w_n46_n476#" "prescaler_0/tspc_2/Z2" 27.6618
+cap "w_2780_1920#" "vdd" 0.84
+cap "w_2780_1920#" "vdd" 9.82
+cap "li_7040_820#" "m1_5770_3360#" 90
+cap "li_3980_680#" "li_5560_680#" 782.5
+cap "Out" "li_7140_680#" 23.5
+cap "w_2780_1920#" "vdd" 4.08
+cap "w_2780_1920#" "vdd" 8.88
+cap "li_7040_820#" "li_5560_680#" 15
+cap "li_5740_3250#" "m1_5770_3360#" 286.375
+cap "mc2" "gnd" 27.9
+cap "li_5460_820#" "li_3980_680#" 20
+cap "li_6130_3350#" "m1_5770_3360#" 136.842
+cap "li_5740_3250#" "li_5560_680#" 21.9534
+cap "li_5740_3250#" "li_3980_680#" 22.5
+cap "mc2" "m1_5770_3360#" 35.7143
+cap "w_2780_1920#" "m1_5770_3360#" 53.84
+cap "mc2" "li_7140_680#" 61.52
+cap "li_5740_3250#" "li_5460_820#" 128.305
+cap "prescaler_0/nand_1/A" "w_n966_n46#" 17.3684
 cap "prescaler_0/nand_1/w_n46_n476#" "prescaler_0/tspc_2/a_630_n680#" 9.78378
 cap "prescaler_0/nand_1/w_n46_n476#" "prescaler_0/GND" 21.945
-cap "prescaler_0/tspc_2/w_n146_n706#" "prescaler_0/tspc_1/GND" 30.14
+cap "prescaler_0/nand_1/w_n46_n476#" "prescaler_0/tspc_2/Z2" 27.6618
 cap "prescaler_0/tspc_2/w_n146_n706#" "prescaler_0/tspc_1/a_630_n680#" 4.89189
 cap "prescaler_0/tspc_2/w_n146_n706#" "prescaler_0/tspc_1/Z2" 27.6618
-cap "tspc_0/w_n140_n70#" "prescaler_0/tspc_1/a_740_n680#" 0.195
-cap "tspc_0/Z4" "tspc_0/D" 35.0633
-cap "gnd" "tspc_0/a_300_n150#" -1.77636e-15
-cap "tspc_0/Z2" "tspc_0/D" 141.466
-cap "gnd" "tspc_0/D" 413.181
+cap "prescaler_0/tspc_2/w_n146_n706#" "prescaler_0/tspc_1/GND" 30.14
+cap "tspc_0/D" "tspc_0/Z4" 35.0633
 cap "prescaler_0/tspc_1/Q" "tspc_0/D" 25.3985
+cap "tspc_0/D" "tspc_0/Z2" 141.466
 cap "prescaler_0/tspc_1/a_740_n680#" "tspc_0/D" 8.4375
-cap "tspc_0/Z3" "tspc_0/D" 1.36364
-cap "gnd" "tspc_0/w_n140_n70#" 0.12
-cap "tspc_0/Z2" "prescaler_0/tspc_1/w_n146_n706#" 27.6618
-cap "prescaler_0/tspc_1/a_630_n680#" "prescaler_0/tspc_1/w_n146_n706#" 4.89189
-cap "gnd" "prescaler_0/tspc_1/w_n146_n706#" 21.945
-cap "tspc_0/a_740_n680#" "tspc_1/D" -7.31795
-cap "tspc_0/a_740_n680#" "tspc_0/Q" 145.525
-cap "gnd" "tspc_1/Z2" 7.81579
-cap "gnd" "tspc_0/a_630_n680#" 7.61538
-cap "tspc_1/w_n140_n70#" "tspc_0/Q" 5.55112e-17
+cap "tspc_0/D" "gnd" 413.181
+cap "tspc_0/D" "tspc_0/Z3" 1.36364
+cap "prescaler_0/tspc_1/w_n146_n706#" "tspc_0/Z2" 27.6618
+cap "tspc_0/w_n140_n70#" "gnd" 0.12
+cap "tspc_0/w_n140_n70#" "prescaler_0/tspc_1/a_740_n680#" 0.195
+cap "prescaler_0/tspc_1/w_n146_n706#" "prescaler_0/tspc_1/a_630_n680#" 4.89189
+cap "prescaler_0/tspc_1/w_n146_n706#" "gnd" 21.945
+cap "tspc_0/Q" "tspc_1/D" 70.641
 cap "tspc_0/a_740_n680#" "tspc_1/Z4" 20.5714
 cap "tspc_0/a_740_n680#" "tspc_1/Z2" 112.823
 cap "tspc_0/a_740_n680#" "tspc_0/a_630_n680#" 159.583
 cap "tspc_0/a_740_n680#" "gnd" 281.141
-cap "tspc_0/Q" "tspc_1/D" 70.641
-cap "w_n966_n46#" "tspc_1/Z2" 27.6618
-cap "w_n966_n46#" "gnd" 23.265
-cap "w_n966_n46#" "tspc_0/a_630_n680#" 9.78378
 cap "tspc_1/w_n140_n70#" "tspc_0/a_740_n680#" 0.065
+cap "gnd" "tspc_1/Z2" 7.81579
+cap "gnd" "tspc_0/a_630_n680#" 7.61538
+cap "w_n966_n46#" "tspc_1/Z2" 27.6618
+cap "tspc_0/a_740_n680#" "tspc_1/D" -7.31795
+cap "w_n966_n46#" "tspc_0/a_630_n680#" 9.78378
+cap "w_n966_n46#" "gnd" 23.265
+cap "tspc_0/a_740_n680#" "tspc_0/Q" 145.525
 cap "tspc_1/D" "tspc_1/Z4" 33.0938
 cap "tspc_1/D" "tspc_1/Z2" 213.298
 cap "tspc_1/D" "tspc_0/a_630_n680#" 5.45455
-cap "tspc_0/Q" "tspc_1/Z4" 30.4615
 cap "tspc_1/D" "gnd" 346.096
+cap "tspc_0/Q" "tspc_1/Z4" 30.4615
 cap "tspc_0/Q" "tspc_1/Z2" 25.8231
 cap "tspc_0/Q" "gnd" 21.2143
 cap "tspc_1/D" "tspc_1/Z3" 1.36364
-cap "tspc_1/Q" "tspc_2/D" 70.641
-cap "tspc_1/a_740_n680#" "tspc_2/D" -6.57619
-cap "tspc_1/a_740_n680#" "tspc_1/Q" 155.525
-cap "w_n966_n46#" "tspc_2/Z2" 12.6176
-cap "w_n966_n46#" "tspc_1/a_630_n680#" 9.78378
-cap "w_n966_n46#" "tspc_1/GND" 30.14
+cap "tspc_1/w_n140_n70#" "tspc_0/Q" 5.55112e-17
 cap "tspc_2/w_n140_n70#" "tspc_1/a_740_n680#" 0.065
 cap "tspc_1/GND" "tspc_2/Z2" 7.81579
 cap "tspc_1/GND" "tspc_1/a_630_n680#" 7.61538
@@ -142,110 +135,117 @@ cap "tspc_2/D" "tspc_2/Z3" 0.681818
 cap "tspc_2/D" "tspc_2/Z4" 20.0553
 cap "tspc_2/D" "tspc_2/Z2" 309.898
 cap "tspc_2/D" "tspc_1/a_630_n680#" 1.21622
-cap "tspc_1/a_740_n680#" "tspc_2/Z4" 10.5882
-cap "tspc_1/Q" "tspc_2/Z2" 25.8231
 cap "tspc_1/Q" "tspc_2/Z4" 30.4615
-cap "tspc_2/D" "tspc_1/GND" 339.551
+cap "tspc_1/a_740_n680#" "tspc_2/Z4" 10.5882
 cap "tspc_1/a_740_n680#" "tspc_2/Z2" 116.18
+cap "tspc_1/Q" "tspc_2/Z2" 25.8231
+cap "tspc_2/D" "tspc_1/GND" 339.551
+cap "w_n966_n46#" "tspc_2/Z2" 12.6176
 cap "tspc_1/a_740_n680#" "tspc_1/a_630_n680#" 159.107
 cap "tspc_1/Q" "tspc_1/GND" 21.2143
+cap "w_n966_n46#" "tspc_1/a_630_n680#" 9.78378
 cap "tspc_1/a_740_n680#" "tspc_1/GND" 440.385
-cap "tspc_2/D" "Out" 20.775
+cap "w_n966_n46#" "tspc_1/GND" 30.14
+cap "tspc_1/Q" "tspc_2/D" 70.641
+cap "tspc_1/a_740_n680#" "tspc_2/D" -6.57619
+cap "tspc_1/a_740_n680#" "tspc_1/Q" 155.525
 cap "tspc_2/D" "tspc_2/Z3" 0.681818
+cap "tspc_2/D" "Out" 20.775
 cap "tspc_2/D" "tspc_1/Q" -1.77636e-15
 cap "tspc_2/D" "tspc_2/a_630_n680#" 159.583
 cap "tspc_2/D" "tspc_2/GND" 450.398
-cap "tspc_2/D" "tspc_2/Z4" 17.815
 cap "tspc_1/w_n146_n706#" "tspc_2/a_630_n680#" 9.78378
+cap "tspc_2/D" "tspc_2/Z4" 17.815
 cap "tspc_1/w_n146_n706#" "tspc_2/GND" 23.265
 cap "tspc_1/w_n146_n706#" "tspc_2/Z2" 15.0441
 cap "tspc_2/Z4" "li_5560_680#" 10.5882
 cap "prescaler_0/nand_1/VDD" "prescaler_0/nand_1/A" 12.2938
 cap "w_n966_n46#" "prescaler_0/nand_1/A" 14.7632
 cap "prescaler_0/nand_1/VDD" "prescaler_0/nand_1/OUT" -2.84217e-14
+cap "prescaler_0/nand_1/VDD" "prescaler_0/mc1" 78.0797
 cap "prescaler_0/nand_1/VDD" "prescaler_0/tspc_0/vdd!" 4.57853
 cap "prescaler_0/nand_1/VDD" "prescaler_0/tspc_0/Q" 6.67557
-cap "prescaler_0/mc1" "prescaler_0/nand_1/VDD" 78.0797
+cap "prescaler_0/nand_1/VDD" "prescaler_0/tspc_2/Z1" 3.19744e-14
 cap "prescaler_0/nand_1/VDD" "prescaler_0/tspc_0/Q" 6.67557
 cap "prescaler_0/nand_1/VDD" "prescaler_0/tspc_2/Z2" -1.77636e-15
 cap "prescaler_0/nand_1/VDD" "prescaler_0/mc1" 2.73
-cap "prescaler_0/nand_1/VDD" "prescaler_0/tspc_2/Z1" 3.19744e-14
 cap "prescaler_0/nand_0/VDD" "prescaler_0/tspc_1/Z3" -2.37588e-14
 cap "prescaler_0/nand_0/VDD" "prescaler_0/tspc_1/Z2" -4.61853e-14
 cap "prescaler_0/nand_0/VDD" "prescaler_0/tspc_1/Z1" 3.55271e-15
 cap "prescaler_0/nand_0/VDD" "prescaler_0/mc1" 73.8879
 cap "prescaler_0/nand_0/VDD" "prescaler_0/nand_0/a_280_n230#" 16.0962
+cap "vdd" "tspc_0/Z2" 10
+cap "vdd" "tspc_0/Z1" 8.88178e-14
 cap "vdd" "prescaler_0/tspc_1/Q" 19.25
+cap "vdd" "prescaler_0/GND" 244.839
 cap "vdd" "prescaler_0/tspc_1/a_740_n680#" 114.95
 cap "vdd" "and_0/OUT" 7.5
-cap "vdd" "prescaler_0/GND" 244.839
 cap "vdd" "prescaler_0/mc1" 4.79032
-cap "vdd" "tspc_0/Z2" 10
-cap "vdd" "tspc_0/Z1" 1.13687e-13
 cap "tspc_0/a_740_n680#" "tspc_0/Q" 75.365
 cap "vdd" "tspc_0/Q" 93.7845
 cap "vdd" "tspc_0/a_740_n680#" 177.528
-cap "tspc_1/w_n140_n70#" "tspc_0/a_740_n680#" 4.63
+cap "nor_0/VDD" "tspc_0/a_740_n680#" 4.63
 cap "tspc_0/Q" "tspc_1/Z1" 7
-cap "vdd" "tspc_1/w_n140_n70#" -3.46
 cap "tspc_0/a_740_n680#" "tspc_1/Z2" 41.1927
-cap "tspc_1/vdd!" "vdd" 224.245
+cap "nor_0/VDD" "vdd" -3.46
+cap "tspc_1/a_740_n680#" "tspc_1/Q" 75.365
+cap "nor_0/VDD" "tspc_2/Z2" 7.54952e-15
+cap "nor_0/VDD" "tspc_2/Z1" 2.25375e-14
+cap "nor_0/VDD" "tspc_1/Z3" -2.37588e-14
+cap "nor_0/VDD" "tspc_1/Q" 93.7845
+cap "nor_0/VDD" "tspc_1/Z2" -2.57572e-14
+cap "vdd" "tspc_1/a_740_n680#" 13.3333
+cap "nor_0/VDD" "tspc_1/a_740_n680#" 76.5957
+cap "nor_0/VDD" "vdd" 224.245
 cap "tspc_1/Q" "tspc_2/Z1" 7
 cap "tspc_1/a_740_n680#" "tspc_2/Z2" 85.1351
-cap "tspc_1/a_740_n680#" "tspc_1/Q" 75.365
-cap "tspc_1/vdd!" "tspc_2/Z2" 7.54952e-15
-cap "tspc_1/vdd!" "tspc_2/Z1" 2.25375e-14
-cap "tspc_1/vdd!" "tspc_1/Q" 93.7845
-cap "tspc_1/vdd!" "tspc_1/Z3" -2.37588e-14
-cap "tspc_1/vdd!" "tspc_1/Z2" -2.57572e-14
-cap "vdd" "tspc_1/a_740_n680#" 13.3333
-cap "tspc_1/vdd!" "tspc_1/a_740_n680#" 76.5957
-cap "tspc_2/vdd!" "Out" 5.9508e-14
 cap "tspc_2/vdd!" "tspc_2/Z3" -2.37588e-14
+cap "tspc_2/vdd!" "Out" 5.9508e-14
 cap "tspc_2/vdd!" "tspc_2/Z2" -2.13163e-14
 cap "tspc_2/vdd!" "tspc_2/Z1" -1.86517e-14
 cap "tspc_2/vdd!" "tspc_2/a_740_n680#" 13.125
 cap "w_n140_1520#" "prescaler_0/tspc_0/vdd!" 6.56545
 cap "w_n140_1520#" "prescaler_0/tspc_0/Q" 27.2014
-cap "prescaler_0/GND" "mc2" 319.267
+cap "prescaler_0/tspc_0/vdd!" "prescaler_0/tspc_0/Z1" 3.55271e-15
+cap "prescaler_0/tspc_0/w_n146_n706#" "prescaler_0/tspc_0/a_630_n680#" 5.04167
+cap "prescaler_0/tspc_0/w_n146_n706#" "prescaler_0/tspc_0/Z2" 9.75806
 cap "prescaler_0/tspc_0/w_n146_n706#" "prescaler_0/GND" 12.1359
 cap "prescaler_0/tspc_0/vdd!" "prescaler_0/tspc_0/Q" 9.57252
-cap "prescaler_0/tspc_0/vdd!" "prescaler_0/tspc_0/Z3" -1.13687e-13
-cap "prescaler_0/tspc_0/w_n146_n706#" "prescaler_0/tspc_0/Z2" 9.75806
-cap "prescaler_0/tspc_0/Z2" "mc2" 126.915
-cap "prescaler_0/tspc_0/vdd!" "prescaler_0/tspc_0/Z1" 3.55271e-15
+cap "prescaler_0/tspc_0/vdd!" "prescaler_0/tspc_0/a_300_n150#" 5.55112e-16
+cap "prescaler_0/tspc_0/vdd!" "prescaler_0/tspc_0/Z3" -1.15019e-13
 cap "prescaler_0/tspc_0/a_630_n680#" "mc2" 328.675
-cap "prescaler_0/tspc_0/w_n146_n706#" "prescaler_0/tspc_0/a_630_n680#" 5.04167
-cap "prescaler_0/nand_0/VDD" "prescaler_0/mc1" 19.9143
-cap "prescaler_0/nand_0/VDD" "prescaler_0/nand_0/a_280_n230#" 34.0634
+cap "prescaler_0/GND" "mc2" 319.267
+cap "prescaler_0/tspc_0/Z2" "mc2" 126.915
 cap "prescaler_0/tspc_0/w_n146_n706#" "prescaler_0/GND" 3.58696
 cap "prescaler_0/nand_0/VDD" "prescaler_0/nand_0/OUT" 5.68434e-14
 cap "prescaler_0/nand_0/VDD" "prescaler_0/tspc_0/Z2" 1.66533e-15
 cap "prescaler_0/tspc_0/w_n146_n706#" "prescaler_0/tspc_0/Z2" 4.5
 cap "prescaler_0/GND" "mc2" 127.942
 cap "prescaler_0/tspc_0/Z2" "mc2" -393.365
-cap "w_n966_n46#" "and_0/Z1" 5.5
-cap "w_n966_n46#" "prescaler_0/mc1" 3.20833
-cap "w_n966_n46#" "gnd" 1.50595
+cap "prescaler_0/nand_0/VDD" "prescaler_0/nand_0/a_280_n230#" 34.0634
+cap "prescaler_0/nand_0/VDD" "prescaler_0/mc1" 19.9143
 cap "w_n966_n46#" "and_0/out1" 3.20833
 cap "and_0/Z1" "mc2" 74.215
-cap "prescaler_0/mc1" "vdd" 39.6
-cap "prescaler_0/mc1" "mc2" 46.015
+cap "and_0/OUT" "mc2" 46.015
 cap "gnd" "mc2" 117.19
-cap "prescaler_0/mc1" "gnd" 22.72
+cap "and_0/OUT" "vdd" 39.6
 cap "and_0/B" "mc2" 13.94
 cap "and_0/out1" "mc2" 59.955
-cap "and_0/VDD" "gnd" 23.0856
 cap "and_0/VDD" "prescaler_0/m1_2700_2190#" 36.6566
-cap "and_0/out1" "prescaler_0/mc1" 48.6223
-cap "and_0/VDD" "prescaler_0/mc1" 0.870968
+cap "and_0/OUT" "gnd" 22.72
+cap "and_0/VDD" "gnd" 23.0856
+cap "w_n966_n46#" "and_0/Z1" 5.5
+cap "and_0/out1" "and_0/OUT" 48.6223
+cap "w_n966_n46#" "gnd" 1.50595
+cap "and_0/VDD" "and_0/OUT" 0.870968
+cap "w_n966_n46#" "and_0/OUT" 3.20833
 cap "and_0/Z1" "mc2" -164.32
 cap "nor_0/gnd!" "mc2" 364.635
 cap "nor_1/A" "mc2" 12.84
 cap "nor_1/B" "mc2" 12.84
 cap "nor_1/Out" "mc2" 161.385
-cap "nor_1/Out" "nor_1/Z1" 22.8782
 cap "nor_0/Out" "nor_1/Z1" 181.56
+cap "nor_1/Out" "nor_1/Z1" 22.8782
 cap "nor_0/Out" "vdd" 90.78
 cap "nor_1/A" "nor_0/gnd!" 1.28205
 cap "nor_1/B" "nor_0/B" 2.64706
@@ -260,8 +260,12 @@ cap "nor_0/VDD" "nor_1/A" 0.99
 cap "nor_0/Out" "nor_1/Out" 90.78
 cap "nor_0/VDD" "nor_0/Out" 4.29
 cap "and_0/w_n126_n696#" "nor_1/Out" 7
-cap "vdd" "nor_1/B" 90.78
+cap "nor_0/VDD" "nor_0/Out" 4.29
+cap "nor_0/B" "nor_0/A" 14.5768
+cap "nor_1/w_n66_n446#" "nor_0/Out" 7
+cap "nor_1/w_n66_n446#" "nor_0/GND" 2
 cap "nor_0/Z1" "nor_1/B" 181.56
+cap "vdd" "nor_1/B" 90.78
 cap "nor_0/Out" "nor_1/B" 90.78
 cap "nor_0/A" "nor_1/B" 15.1125
 cap "nor_0/B" "nor_1/B" 17.7596
@@ -269,26 +273,22 @@ cap "nor_0/VDD" "nor_1/B" -7.41
 cap "nor_0/A" "nor_0/Out" 180.039
 cap "nor_0/A" "nor_0/GND" 305.362
 cap "nor_0/B" "nor_0/Out" 41.7957
-cap "nor_0/VDD" "nor_0/Out" 4.29
-cap "nor_0/B" "nor_0/A" 14.5768
-cap "nor_1/w_n66_n446#" "nor_0/Out" 7
-cap "nor_1/w_n66_n446#" "nor_0/GND" 2
+cap "prescaler_0/tspc_0/w_n146_n706#" "prescaler_0/tspc_0/Z2" 9.75806
 cap "prescaler_0/tspc_0/w_n146_n706#" "prescaler_0/tspc_0/a_630_n680#" 5.04167
 cap "prescaler_0/tspc_0/w_n146_n706#" "prescaler_0/GND" 12.1359
-cap "prescaler_0/tspc_0/Z2" "prescaler_0/tspc_0/w_n146_n706#" 9.75806
 cap "prescaler_0/tspc_0/w_n146_n706#" "prescaler_0/GND" 3.58696
 cap "prescaler_0/tspc_0/w_n146_n706#" "prescaler_0/tspc_0/Z2" 4.5
-cap "w_n966_n46#" "and_0/Z1" 5.5
-cap "w_n966_n46#" "and_0/out1" 3.20833
 cap "w_n966_n46#" "gnd" 9.75595
 cap "w_n966_n46#" "and_0/OUT" 3.20833
+cap "w_n966_n46#" "and_0/Z1" 5.5
+cap "w_n966_n46#" "and_0/out1" 3.20833
 cap "nor_0/gnd!" "mc2" 41.6667
-cap "and_0/Z1" "and_0/w_n126_n696#" 0.916667
-cap "nor_0/gnd!" "and_0/w_n126_n696#" 29.5
-cap "nor_1/Out" "and_0/w_n126_n696#" 7
-cap "nor_0/GND" "mc2" 41.6667
+cap "and_0/w_n126_n696#" "and_0/Z1" 0.916667
+cap "and_0/w_n126_n696#" "nor_1/Out" 7
+cap "and_0/w_n126_n696#" "nor_0/gnd!" 29.5
 cap "nor_1/w_n66_n446#" "nor_0/Out" 7
 cap "nor_1/w_n66_n446#" "nor_0/GND" 20.3333
+cap "nor_0/GND" "mc2" 41.6667
 merge "nor_1/gnd!" "nor_0/GND" -277.358 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34184 -2250 0 0 0 0
 merge "nor_0/GND" "nor_1/GND"
 merge "nor_1/GND" "nor_0/gnd!"
@@ -300,32 +300,32 @@ merge "tspc_2/GND" "tspc_1/gnd!"
 merge "tspc_1/gnd!" "tspc_2/gnd!"
 merge "tspc_2/gnd!" "tspc_1/GND"
 merge "tspc_1/GND" "m4_7020_30#"
-merge "m4_7020_30#" "prescaler_0/GND"
-merge "prescaler_0/GND" "tspc_0/GND"
-merge "tspc_0/GND" "gnd"
+merge "m4_7020_30#" "tspc_0/GND"
+merge "tspc_0/GND" "prescaler_0/GND"
+merge "prescaler_0/GND" "gnd"
 merge "prescaler_0/clk" "clk" -41.255 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -600 -200 0 0 0 0 0 0 0 0
 merge "and_0/OUT" "prescaler_0/mc1" -377.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304200 -260 0 0 0 0 0 0 0 0 0 0 0 0
 merge "prescaler_0/mc1" "li_2870_2670#"
 merge "prescaler_0/m4_2730_1520#" "tspc_2/vdd!" 648.833 0 0 0 0 677908 -39550 0 0 -119000 -1030 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 219820 -1356 -67080 -1036 -67080 -1036 -67080 -1036 -223132 -7758 0 0 0 0
-merge "tspc_2/vdd!" "nor_1/vdd!"
-merge "nor_1/vdd!" "m4_7030_1860#"
-merge "m4_7030_1860#" "nor_1/VDD"
+merge "tspc_2/vdd!" "tspc_1/vdd!"
+merge "tspc_1/vdd!" "m4_7030_1860#"
+merge "m4_7030_1860#" "nor_1/vdd!"
+merge "nor_1/vdd!" "nor_1/VDD"
 merge "nor_1/VDD" "nor_0/vdd!"
 merge "nor_0/vdd!" "nor_0/VDD"
-merge "nor_0/VDD" "tspc_1/vdd!"
-merge "tspc_1/vdd!" "and_0/vdd!"
-merge "and_0/vdd!" "and_0/VDD"
-merge "and_0/VDD" "prescaler_0/tspc_1/vdd!"
-merge "prescaler_0/tspc_1/vdd!" "tspc_0/vdd!"
-merge "tspc_0/vdd!" "vdd"
-merge "vdd" "prescaler_0/nand_0/vdd!"
+merge "nor_0/VDD" "tspc_0/vdd!"
+merge "tspc_0/vdd!" "and_0/vdd!"
+merge "and_0/vdd!" "vdd"
+merge "vdd" "prescaler_0/tspc_1/vdd!"
+merge "prescaler_0/tspc_1/vdd!" "and_0/VDD"
+merge "and_0/VDD" "prescaler_0/nand_0/vdd!"
 merge "prescaler_0/nand_0/vdd!" "li_3310_1810#"
 merge "li_3310_1810#" "prescaler_0/nand_0/VDD"
 merge "prescaler_0/nand_0/VDD" "tspc_2/w_n140_n70#"
 merge "tspc_2/w_n140_n70#" "tspc_1/w_n140_n70#"
-merge "tspc_1/w_n140_n70#" "prescaler_0/tspc_1/w_n140_n70#"
-merge "prescaler_0/tspc_1/w_n140_n70#" "tspc_0/w_n140_n70#"
-merge "tspc_0/w_n140_n70#" "prescaler_0/w_1930_2072#"
+merge "tspc_1/w_n140_n70#" "tspc_0/w_n140_n70#"
+merge "tspc_0/w_n140_n70#" "prescaler_0/tspc_1/w_n140_n70#"
+merge "prescaler_0/tspc_1/w_n140_n70#" "prescaler_0/w_1930_2072#"
 merge "prescaler_0/w_1930_2072#" "w_2780_1920#"
 merge "nor_0/B" "tspc_2/a_740_n680#" -1145.97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -144400 -160 163360 -4720 0 0 0 0 0 0 0 0 0 0
 merge "tspc_2/a_740_n680#" "tspc_2/D"
@@ -349,8 +349,8 @@ merge "tspc_2/w_n146_n706#" "tspc_1/w_n146_n706#"
 merge "tspc_1/w_n146_n706#" "tspc_0/w_n146_n706#"
 merge "tspc_0/w_n146_n706#" "prescaler_0/VSUBS"
 merge "prescaler_0/VSUBS" "w_n966_n46#"
-merge "prescaler_0/Out" "tspc_0/a_300_n150#" -31.505 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6600 -140 0 0 0 0 0 0 0 0
-merge "tspc_0/a_300_n150#" "m2_3910_680#"
+merge "tspc_0/a_300_n150#" "prescaler_0/Out" -31.505 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6600 -140 0 0 0 0 0 0 0 0
+merge "prescaler_0/Out" "m2_3910_680#"
 merge "prescaler_0/tspc_0/vdd!" "prescaler_0/tspc_0/w_n140_n70#" -700.975 0 0 0 0 -223152 -5390 0 0 -41700 -500 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10982 -564 -9340 -564 -13120 -564 -19492 -564 -19184 -820 0 0 0 0
 merge "prescaler_0/tspc_0/w_n140_n70#" "prescaler_0/nand_1/vdd!"
 merge "prescaler_0/nand_1/vdd!" "prescaler_0/nand_1/VDD"
