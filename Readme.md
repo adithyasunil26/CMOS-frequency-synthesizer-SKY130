@@ -4,7 +4,7 @@ This project contains a 2.87 GHz fractional-N frequency synthesizer based microw
 
 ## Project implementation
 The figure below shows the block diagram for the 2.87 GHz fractional-N sythesizer implemented in skywater 130nm tecnology.  
-![PLL loop](PLL.png "Fractional -N synthesiszer PLL")
+![PLL loop](Images/PLL.png "Fractional -N synthesiszer PLL")
 
 
 ### Simulation results
