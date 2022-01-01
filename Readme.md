@@ -10,10 +10,11 @@ The figure below shows the block diagram for the 2.87 GHz fractional-N sythesize
 ### Simulation results
 To validate our circuit, we have tested it in 180 nm technology and the results for the same are shown in the figure below.
 #### Phase Frequency Detector
-![](pfd.png) 
+![](Images/pfd.png) 
 #### Voltage controlled Oscillator
-![](ro_cbank_var_post.png)
-
+![](Images/ro_cbank_var_post.png)
+#### Fractional-N divider
+![](Images/div.png)
 ### Sources
 This repository mainly contains all the required building blocks for the implementation of the PLL(gds/mag/netlists). We have the complete fractional-N PLL loop, individual blocks - PFD, fresctional-N divider, VCO, charge pump and loop filter. In addition to these we have combinations of phase dectector - divider and VCO - divider.  
 
